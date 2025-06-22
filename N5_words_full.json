@@ -698,6 +698,1721 @@
         "romaji": "doa o osu.",
         "chinese": "推門。"
       }
+    },
+    {
+      "id": 68,
+      "number": {
+        "japanese": "ろくじゅうはち",
+        "romaji": "rokujuuhachi"
+      },
+      "word": {
+        "hiragana": "この",
+        "romaji": "kono",
+        "kanji": "この",
+        "meaning": "這個（修飾名詞）",
+        "part_of_speech": "連體詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "この本は面白いです。",
+        "romaji": "kono hon wa omoshiroi desu.",
+        "chinese": "這本書很有趣。"
+      },
+      "memory_aid": "「kono」的意思是「這個」，它總是會接在名詞前面，不能單獨使用。想像你指向一個東西，然後說「摳～喏～（kono）！就是這個！」。它和「sono (那個，靠近對方)」以及「ano (那個，離雙方都遠)」是一組的，可以一起記，就像中文的「這個、那個、那個」。在台灣，我們也常用「這個、那個」來指代物品，所以會很習慣。",
+      "advanced_phrase": {
+        "japanese": "この犬。",
+        "romaji": "kono inu.",
+        "chinese": "這隻狗。"
+      }
+    },
+    {
+      "id": 69,
+      "number": {
+        "japanese": "ろくじゅうきゅう",
+        "romaji": "rokujuukyuu"
+      },
+      "word": {
+        "hiragana": "ボタン",
+        "romaji": "botan",
+        "kanji": "",
+        "meaning": "按鈕、鈕扣",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ボタンを押してください。",
+        "romaji": "botan o oshite kudasai.",
+        "chinese": "請按按鈕。"
+      },
+      "memory_aid": "這是個外來語，直接來自英文的「button」。發音「botan」聽起來就像中文的「波彈」，想像按鈕按下去會「波」地一聲彈起來。在台灣，電梯、電器、衣服上都有按鈕或鈕扣，是非常常見的物品。常和動詞「押す (osu - 按壓)」搭配使用。",
+      "advanced_phrase": {
+        "japanese": "ボタンを締める。",
+        "romaji": "botan o shimeru.",
+        "chinese": "扣上鈕扣。"
+      }
+    },
+    {
+      "id": 70,
+      "number": {
+        "japanese": "ななじゅう",
+        "romaji": "nanajuu"
+      },
+      "word": {
+        "hiragana": "およぐ",
+        "romaji": "oyogu",
+        "kanji": "泳ぐ",
+        "meaning": "游泳",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "プールで泳ぎます。",
+        "romaji": "puuru de oyogimasu.",
+        "chinese": "在游泳池游泳。"
+      },
+      "memory_aid": "這是個表示動作的動詞。發音「oyogu」聽起來像「喔唷谷」，想像你在游泳時，不小心嗆到水，會「喔唷！」一聲，然後像在山谷（谷）裡一樣游來游去。台灣夏天很熱，很多人會去游泳消暑，所以這個詞很常用。常和助詞「で」搭配，表示在哪裡游泳。",
+      "advanced_phrase": {
+        "japanese": "海で泳ぐ。",
+        "romaji": "umi de oyogu.",
+        "chinese": "在海裡游泳。"
+      }
+    },
+    {
+      "id": 71,
+      "number": {
+        "japanese": "ななじゅういち",
+        "romaji": "nanajuuichi"
+      },
+      "word": {
+        "hiragana": "うみ",
+        "romaji": "umi",
+        "kanji": "海",
+        "meaning": "海、海洋",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "夏は海に行きます。",
+        "romaji": "natsu wa umi ni ikimasu.",
+        "chinese": "夏天去海邊。"
+      },
+      "memory_aid": "「umi」的發音聽起來像「屋米」，想像海邊的屋頂是用米做的，很特別！台灣是個海島，東南西北都有海，大家都很喜歡去海邊玩水、看海，所以這個詞語非常貼近生活。常搭配助詞「に」和動詞「行く (iku - 去)」，表示去海邊。",
+      "advanced_phrase": {
+        "japanese": "海が広い。",
+        "romaji": "umi ga hiroi.",
+        "chinese": "海很寬廣。"
+      }
+    },
+    {
+      "id": 72,
+      "number": {
+        "japanese": "ななじゅうに",
+        "romaji": "nanajuuni"
+      },
+      "word": {
+        "hiragana": "おわる",
+        "romaji": "owaru",
+        "kanji": "終わる",
+        "meaning": "結束、完畢",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "授業が終わります。",
+        "romaji": "jugyou ga owarimasu.",
+        "chinese": "下課了。"
+      },
+      "memory_aid": "這是自動詞，表示事情『自己結束』。發音「owaru」聽起來像「喔哇嚕」，想像事情結束了，你可以放鬆地說「喔！哇！結束嚕～」。在台灣，無論是上課、工作、看電影，都會有『結束』的時候，這是很日常的詞彙。常用來搭配時間或事件名詞，表示其結束。例如：「會議が終わる」(會議結束)。",
+      "advanced_phrase": {
+        "japanese": "仕事が終わる。",
+        "romaji": "shigoto ga owaru.",
+        "chinese": "工作結束了。"
+      }
+    },
+    {
+      "id": 73,
+      "number": {
+        "japanese": "ななじゅうさん",
+        "romaji": "nanajuusan"
+      },
+      "word": {
+        "hiragana": "じゅぎょう",
+        "romaji": "jugyou",
+        "kanji": "授業",
+        "meaning": "課程、授課、上課",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "日本語の授業があります。",
+        "romaji": "nihongo no jugyou ga arimasu.",
+        "chinese": "有日語課。"
+      },
+      "memory_aid": "「jugyou」的發音聽起來像「居揪優」，想像老師說：「居（jyu）然上課（gyou）還在揪團喝飲料（you）！」這個詞在學校或補習班很常用，是指老師教課、學生上課的那個「課程」或「時間」。和「授業が終わる (jugyou ga owaru - 下課)」、「授業が始まる (jugyou ga hajimaru - 上課)」是常見的搭配。",
+      "advanced_phrase": {
+        "japanese": "今日の授業。",
+        "romaji": "kyou no jugyou.",
+        "chinese": "今天的課。"
+      }
+    },
+    {
+      "id": 74,
+      "number": {
+        "japanese": "ななじゅうよん",
+        "romaji": "nanajuuyon"
+      },
+      "word": {
+        "hiragana": "かえす",
+        "romaji": "kaesu",
+        "kanji": "返す",
+        "meaning": "歸還、歸還",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "本を返します。",
+        "romaji": "hon o kaeshimasu.",
+        "chinese": "還書。"
+      },
+      "memory_aid": "這是個他動詞，表示『把東西還回去』。發音「kaesu」聽起來像「咖欸蘇」，想像你把借來的東西「咖（ka）緊欸（e）蘇（su）」地還回去（台語：趕快還）。在台灣，圖書館借書、借錢、借東西，最後都要『歸還』，所以這個詞很常用。它和「借りる (kariru - 借)」是相對的詞，可以一起記住。常用句型是「名詞 を 返す」，表示歸還某物。",
+      "advanced_phrase": {
+        "japanese": "お金を返す。",
+        "romaji": "okane o kaesu.",
+        "chinese": "還錢。"
+      }
+    },
+    {
+      "id": 75,
+      "number": {
+        "japanese": "ななじゅうご",
+        "romaji": "nanajuugo"
+      },
+      "word": {
+        "hiragana": "しゃっきん",
+        "romaji": "shakkin",
+        "kanji": "借金",
+        "meaning": "借款、債務",
+        "part_of_speech": "名詞",
+        "level": "N3"
+      },
+      "example": {
+        "japanese": "借金があります。",
+        "romaji": "shakkin ga arimasu.",
+        "chinese": "有債務。"
+      },
+      "memory_aid": "「shakkin」發音聽起來像「俠金」，想像一位江湖上的大俠欠了好多「金」子（錢），成為了「借金」纍纍的人。這個詞通常指金錢上的債務。在台灣社會，借錢或欠債也是常有的事，雖然不希望遇到，但理解這個詞彙很重要。常與動詞「する (suru - 做)」搭配表示「借錢、負債」，或與「返す (kaesu - 歸還)」搭配表示「還債」。",
+      "advanced_phrase": {
+        "japanese": "借金を返す。",
+        "romaji": "shakkin o kaesu.",
+        "chinese": "還債務。"
+      }
+    },
+    {
+      "id": 76,
+      "number": {
+        "japanese": "ななじゅうろく",
+        "romaji": "nanajuuroku"
+      },
+      "word": {
+        "hiragana": "ゆうがた",
+        "romaji": "yuugata",
+        "kanji": "夕方",
+        "meaning": "傍晚、黃昏",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "夕方に散歩します。",
+        "romaji": "yuugata ni sanpo shimasu.",
+        "chinese": "傍晚散步。"
+      },
+      "memory_aid": "「yuugata」發音像「優尬他」，想像太陽下山後，天色開始昏暗，你會說「優雅地（yuu-ga-ta）迎接傍晚」。這個詞指的是太陽下山後到天完全黑之前這段時間。在台灣，很多家庭會在傍晚出門散步或去夜市，是很常見的日常情境。常用助詞「に」表示在傍晚做某事。",
+      "advanced_phrase": {
+        "japanese": "夕方から暗い。",
+        "romaji": "yuugata kara kurai.",
+        "chinese": "從傍晚就暗了。"
+      }
+    },
+    {
+      "id": 77,
+      "number": {
+        "japanese": "ななじゅうなな",
+        "romaji": "nanajuunana"
+      },
+      "word": {
+        "hiragana": "かいもの",
+        "romaji": "kaimono",
+        "kanji": "買い物",
+        "meaning": "購物、買東西",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "スーパーで買い物をします。",
+        "romaji": "suupaa de kaimono o shimasu.",
+        "chinese": "在超市購物。"
+      },
+      "memory_aid": "這個詞是由「買う (kau - 買)」和「物 (mono - 物品)」組合而成的，非常好記！「kaimono」發音像「開摸no」，想像你打開錢包「開」心地去「摸（摸索）」各種商品。在台灣，逛街、上市場、去百貨公司都是很日常的「購物」行為，所以這個詞很常用。常用搭配動詞「する (suru - 做)」形成「買い物をする」(購物)。",
+      "advanced_phrase": {
+        "japanese": "今日の買い物。",
+        "romaji": "kyou no kaimono.",
+        "chinese": "今天的購物。"
+      }
+    },
+    {
+      "id": 78,
+      "number": {
+        "japanese": "ななじゅうはち",
+        "romaji": "nanajuuhachi"
+      },
+      "word": {
+        "hiragana": "じかん",
+        "romaji": "jikan",
+        "kanji": "時間",
+        "meaning": "時間",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "時間がありません。",
+        "romaji": "jikan ga arimasen.",
+        "chinese": "沒有時間。"
+      },
+      "memory_aid": "「jikan」的發音非常像中文的「時間」，幾乎是直接的音譯，所以非常好記！想像你抬頭看手錶，時間一秒一秒地過去，發出「嘰咖～（jikan）」的聲音。在台灣，我們常常說「沒時間了」、「時間到了」，這個詞就是指廣泛的『時間』概念。常用來搭配動詞「かかる (kakaru - 花費)」表示「花時間」，或是「ある (aru - 有)」表示「有時間」。",
+      "advanced_phrase": {
+        "japanese": "時間がある。",
+        "romaji": "jikan ga aru.",
+        "chinese": "有時間。"
+      }
+    },
+    {
+      "id": 79,
+      "number": {
+        "japanese": "ななじゅうきゅう",
+        "romaji": "nanajuukyuu"
+      },
+      "word": {
+        "hiragana": "かく",
+        "romaji": "kaku",
+        "kanji": "書く",
+        "meaning": "寫、畫",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "手紙を書きます。",
+        "romaji": "tegami o kakimasu.",
+        "chinese": "寫信。"
+      },
+      "memory_aid": "「kaku」發音聽起來像「咖哭」，想像你在寫字或畫畫時，不小心寫/畫歪了，心裡「咖哭」了一聲。這個詞非常實用，無論是寫信、寫日記、寫作業，或是畫圖、畫畫，都可以用這個動詞。在台灣，學生每天都會『寫』功課，這是一個很基礎的動作。常用句型是「名詞 を 書く」，表示寫或畫某物。",
+      "advanced_phrase": {
+        "japanese": "絵を描く。",
+        "romaji": "e o kaku.",
+        "chinese": "畫畫。"
+      }
+    },
+    {
+      "id": 80,
+      "number": {
+        "japanese": "はちじゅう",
+        "romaji": "hachijuu"
+      },
+      "word": {
+        "hiragana": "てがみ",
+        "romaji": "tegami",
+        "kanji": "手紙",
+        "meaning": "信、書信",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "手紙を書きます。",
+        "romaji": "tegami o kakimasu.",
+        "chinese": "寫信。"
+      },
+      "memory_aid": "「tegami」的發音聽起來像「貼咖咪」，想像你要寄信時，要把郵票「貼」上去，再把信拿去「咖（寄）咪（給）」（台語的給誰）寄出去。雖然現在用電子郵件和訊息更多，但寫信在日語中仍然是很常見的表達方式，特別是比較正式或表達心意時。常用來搭配動詞「書く (kaku - 寫)」或「出す (dasu - 寄出)」。",
+      "advanced_phrase": {
+        "japanese": "長い手紙。",
+        "romaji": "nagai tegami.",
+        "chinese": "長長的信。"
+      }
+    },
+    {
+      "id": 81,
+      "number": {
+        "japanese": "はちじゅういち",
+        "romaji": "hachijuuichi"
+      },
+      "word": {
+        "hiragana": "かす",
+        "romaji": "kasu",
+        "kanji": "貸す",
+        "meaning": "借出、借給",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "友達にお金を貸します。",
+        "romaji": "tomodachi ni okane o kashimasu.",
+        "chinese": "借錢給朋友。"
+      },
+      "memory_aid": "這是個他動詞，表示你**把東西借給別人**。發音「kasu」聽起來像「咖速」，想像你急著把東西「快速（kasu）」地借出去。它和「借りる (kariru - 借入)」是相對的詞，非常重要，請務必一起記。在台灣，我們也常有借東西給朋友的經驗，這個詞就派上用場了。常用句型是「人 に 物 を 貸す」，表示借某物給某人。",
+      "advanced_phrase": {
+        "japanese": "ペンを貸す。",
+        "romaji": "pen o kasu.",
+        "chinese": "借出筆。"
+      }
+    },
+    {
+      "id": 82,
+      "number": {
+        "japanese": "はちじゅうに",
+        "romaji": "hachijuuni"
+      },
+      "word": {
+        "hiragana": "ほん",
+        "romaji": "hon",
+        "kanji": "本",
+        "meaning": "書、書籍",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "本を読みます。",
+        "romaji": "hon o yomimasu.",
+        "chinese": "看書。"
+      },
+      "memory_aid": "「hon」的發音聽起來很像中文的「本」，就像『一本書』的『本』，非常好記！這是指各種書籍、課本、小說等。在台灣，讀書是很普遍的活動，所以這個詞很常用。它也是一個量詞，數書籍時可以用「一冊 (issatsu)」、「二冊 (nisatsu)」等，但單獨說「本」就是指「書」這個物品。常用來搭配動詞「読む (yomu - 讀)」或「買う (kau - 買)」。",
+      "advanced_phrase": {
+        "japanese": "新しい本。",
+        "romaji": "atarashii hon.",
+        "chinese": "新書。"
+      }
+    },
+    {
+      "id": 83,
+      "number": {
+        "japanese": "はちじゅうさん",
+        "romaji": "hachijuusan"
+      },
+      "word": {
+        "hiragana": "かぶる",
+        "romaji": "kaburu",
+        "kanji": "被る",
+        "meaning": "戴上（帽子、頭盔等）、蒙上、披上",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "帽子を被ります。",
+        "romaji": "boushi o kaburimasu.",
+        "chinese": "戴帽子。"
+      },
+      "memory_aid": "這個動詞專門用來指戴在頭上的東西，像是帽子、頭盔。發音「kaburu」聽起來像「咖布魯」，你可以想像你戴帽子時，發現帽子「卡布（kaburu）」在頭上，有點緊的感覺。在台灣，戴帽子出門防曬或戴安全帽騎車是很常見的，所以這個詞很實用。常用句型是「名詞 を 被る」，表示戴上某物。",
+      "advanced_phrase": {
+        "japanese": "ヘルメットを被る。",
+        "romaji": "herumetto o kaburu.",
+        "chinese": "戴安全帽。"
+      }
+    },
+    {
+      "id": 84,
+      "number": {
+        "japanese": "はちじゅうよん",
+        "romaji": "hachijuuyon"
+      },
+      "word": {
+        "hiragana": "ぼうし",
+        "romaji": "boushi",
+        "kanji": "帽子",
+        "meaning": "帽子",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "帽子を被ります。",
+        "romaji": "boushi o kaburimasu.",
+        "chinese": "戴帽子。"
+      },
+      "memory_aid": "「boushi」的發音聽起來像「包西」，想像你的頭被帽子「包」起來，然後很「西」利（台語：厲害）！在台灣，夏天戴帽子遮陽，冬天戴帽子保暖，是很常見的配件。這個詞通常指各種款式的帽子，無論是棒球帽、漁夫帽、毛帽等。常搭配動詞「被る (kaburu - 戴上)」。",
+      "advanced_phrase": {
+        "japanese": "可愛い帽子。",
+        "romaji": "kawaii boushi.",
+        "chinese": "可愛的帽子。"
+      }
+    },
+    {
+      "id": 85,
+      "number": {
+        "japanese": "はちじゅうご",
+        "romaji": "hachijuugo"
+      },
+      "word": {
+        "hiragana": "おんがく",
+        "romaji": "ongaku",
+        "kanji": "音楽",
+        "meaning": "音樂",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "音楽を聴きます。",
+        "romaji": "ongaku o kikimasu.",
+        "chinese": "聽音樂。"
+      },
+      "memory_aid": "「ongaku」的發音聽起來像「甕嘎哭」，想像你聽到好聽的音樂，感動到眼淚都從甕（甕）裡「嘎哭（哭）」出來。在台灣，音樂無所不在，從流行歌曲到古典樂，是生活中不可或缺的一部分。常搭配動詞「聴く (kiku - 聽)」或「する (suru - 做)」形成「音楽を聴く (ongaku o kiku - 聽音樂)」或「音楽をする (ongaku o suru - 演奏音樂)」。",
+      "advanced_phrase": {
+        "japanese": "好きな音楽。",
+        "romaji": "suki na ongaku.",
+        "chinese": "喜歡的音樂。"
+      }
+    },
+    {
+      "id": 86,
+      "number": {
+        "japanese": "はちじゅうろく",
+        "romaji": "hachijuuroku"
+      },
+      "word": {
+        "hiragana": "きる",
+        "romaji": "kiru",
+        "kanji": "著る",
+        "meaning": "穿（衣服）",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "服を著ます。",
+        "romaji": "fuku o kimasu.",
+        "chinese": "穿衣服。"
+      },
+      "memory_aid": "「kiru」的發音聽起來像「奇路」，想像你穿衣服時，褲子「奇」怪地套不上「路」（台語『路』音同『褲』）。這個動詞專門用來指**穿戴上半身及全身的衣服**，例如襯衫、外套、裙子、連身裙等。和「履く (haku - 穿下半身或腳上的東西)」以及「被る (kaburu - 戴頭上的東西)」是不同組的，要特別注意區分喔！在台灣，每天都要穿衣服出門，非常實用。",
+      "advanced_phrase": {
+        "japanese": "シャツを著る。",
+        "romaji": "shatsu o kiru.",
+        "chinese": "穿襯衫。"
+      }
+    },
+    {
+      "id": 87,
+      "number": {
+        "japanese": "はちじゅうなな",
+        "romaji": "hachijuunana"
+      },
+      "word": {
+        "hiragana": "あし",
+        "romaji": "ashi",
+        "kanji": "足",
+        "meaning": "腳、腿",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "足が痛いです。",
+        "romaji": "ashi ga itai desu.",
+        "chinese": "腳很痛。"
+      },
+      "memory_aid": "「ashi」的發音聽起來像「阿西」，你可以想像你的腳踩到地板，「啊～嘶～」了一聲。這個詞可以指整個「腿部」或特指「腳踝以下」的部分。在台灣，走路、運動都會用到腳，這是很基本的身體部位詞彙。常用來搭配形容詞「痛い (itai - 痛的)」或動詞「歩く (aruku - 走路)」。",
+      "advanced_phrase": {
+        "japanese": "足が速い。",
+        "romaji": "ashi ga hayai.",
+        "chinese": "跑得快。"
+      }
+    },
+    {
+      "id": 88,
+      "number": {
+        "japanese": "はちじゅうはち",
+        "romaji": "hachijuuhachi"
+      },
+      "word": {
+        "hiragana": "つめ",
+        "romaji": "tsume",
+        "kanji": "爪",
+        "meaning": "指甲、趾甲；爪子",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "爪を切ります。",
+        "romaji": "tsume o kirimasu.",
+        "chinese": "剪指甲。"
+      },
+      "memory_aid": "「tsume」的發音聽起來像「茲咩」，你可以想像指甲長長了，想要把它『擠』掉，『咩』地一聲剪掉。這個詞可以指人手的指甲、腳趾甲，也可以指動物的爪子。在台灣，定期剪指甲是很日常的衛生習慣，所以這個詞很實用。常搭配動詞「切る (kiru - 剪)」形成「爪を切る (tsume o kiru - 剪指甲)」。",
+      "advanced_phrase": {
+        "japanese": "貓の爪。",
+        "romaji": "neko no tsume.",
+        "chinese": "貓的爪子。"
+      }
+    },
+    {
+      "id": 89,
+      "number": {
+        "japanese": "はちじゅうきゅう",
+        "romaji": "hachijuukyuu"
+      },
+      "word": {
+        "hiragana": "けす",
+        "romaji": "kesu",
+        "kanji": "消す",
+        "meaning": "關掉、熄滅、消除",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "電気を消します。",
+        "romaji": "denki o keshimasu.",
+        "chinese": "關燈。"
+      },
+      "memory_aid": "這是個他動詞，表示你**主動去做**『關掉』的動作。發音「kesu」聽起來像「Kesu」（台語『雞絲』），想像你把燈或火雞（雞絲）『消滅』掉！這個詞非常實用，可以指關燈、關電視、熄火、擦掉字跡等等。和「つく (tsuku - 開啟、點亮，自動詞)」是相對的詞，可以一起記住。在台灣，每天都要關燈、關電器，很生活化。",
+      "advanced_phrase": {
+        "japanese": "テレビを消す。",
+        "romaji": "terebi o kesu.",
+        "chinese": "關掉電視。"
+      }
+    },
+    {
+      "id": 90,
+      "number": {
+        "japanese": "きゅうじゅう",
+        "romaji": "kyuujuu"
+      },
+      "word": {
+        "hiragana": "でんき",
+        "romaji": "denki",
+        "kanji": "電気",
+        "meaning": "電、電力；電燈",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "電気をつけます。",
+        "romaji": "denki o tsukemasu.",
+        "chinese": "開燈。"
+      },
+      "memory_aid": "「denki」的發音聽起來像「電氣」，和中文的「電氣」或「電力」很像，非常好記！這個詞可以指廣泛的『電力』，也可以特指『電燈』。在台灣，我們每天都會用到電，開燈、用電器都很常見。常用來搭配動詞「つける (tsukeru - 打開/點亮)」和「消す (kesu - 關掉)」，形成「開燈」和「關燈」。",
+      "advanced_phrase": {
+        "japanese": "電気をつける。",
+        "romaji": "denki o tsukeru.",
+        "chinese": "開燈。"
+      }
+    },
+    {
+      "id": 91,
+      "number": {
+        "japanese": "きゅうじゅういち",
+        "romaji": "kyuujuuichi"
+      },
+      "word": {
+        "hiragana": "こまる",
+        "romaji": "komaru",
+        "kanji": "困る",
+        "meaning": "困擾、為難、傷腦筋",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "困ったことがあります。",
+        "romaji": "komatta koto ga arimasu.",
+        "chinese": "有困擾的事情。"
+      },
+      "memory_aid": "「komaru」的發音聽起來像「摳馬路」，想像你走在馬路上，突然遇到一個很大的坑洞，讓你感到『困擾』，必須『摳（想辦法）馬路』。這個詞用來表示遇到困難、不方便或感到為難的狀況。在台灣，生活中遇到各種大大小小的麻煩事，都可以用這個詞來表達心情。常用句型是「〜て困る」(因為…而感到困擾) 或「困った時」(遇到困難的時候)。",
+      "advanced_phrase": {
+        "japanese": "本當に困る。",
+        "romaji": "hontou ni komaru.",
+        "chinese": "真讓人困擾。"
+      }
+    },
+    {
+      "id": 92,
+      "number": {
+        "japanese": "きゅうじゅうに",
+        "romaji": "kyuujyuuni"
+      },
+      "word": {
+        "hiragana": "おくれて",
+        "romaji": "okurete",
+        "kanji": "遅れて",
+        "meaning": "遲到、耽誤",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "授業に遅れてすみません。",
+        "romaji": "jugyou ni okurete sumimasen.",
+        "chinese": "上課遲到了，對不起。"
+      },
+      "memory_aid": "這是動詞「遅れる (okureru - 遲到)」的て形。發音「okurete」聽起來像「喔哭咧貼」，想像你遲到了，緊張得「喔！哭咧！（哭爹啊）」地趕著去貼時間。這個詞在生活中很常用，無論是上班、上學、約會，如果遲到了就會用到。在台灣，遲到有時會讓人感到不好意思，所以學會這個表達很重要。",
+      "advanced_phrase": {
+        "japanese": "バスが遅れてる。",
+        "romaji": "basu ga okureteru.",
+        "chinese": "公車遲到了。"
+      }
+    },
+    {
+      "id": 93,
+      "number": {
+        "japanese": "きゅうじゅうさん",
+        "romaji": "kyuujuusan"
+      },
+      "word": {
+        "hiragana": "さく",
+        "romaji": "saku",
+        "kanji": "咲く",
+        "meaning": "開花",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "桜が咲きます。",
+        "romaji": "sakura ga sakimasu.",
+        "chinese": "櫻花開了。"
+      },
+      "memory_aid": "這是個自動詞，專門指花朵『自己開了』。發音「saku」聽起來像「撒哭」，想像花開得太美了，美到讓你想「撒（灑）淚（哭）」。在台灣，每年春天櫻花、杜鵑花、桐花盛開，賞花是很棒的活動，所以這個詞很常用。常用句型是「花 が 咲く」，表示某種花開了。",
+      "advanced_phrase": {
+        "japanese": "花が咲く。",
+        "romaji": "hana ga saku.",
+        "chinese": "花開了。"
+      }
+    },
+    {
+      "id": 94,
+      "number": {
+        "japanese": "きゅうじゅうよん",
+        "romaji": "kyuujuuyon"
+      },
+      "word": {
+        "hiragana": "もも",
+        "romaji": "momo",
+        "kanji": "桃",
+        "meaning": "桃子",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "桃が好きです。",
+        "romaji": "momo ga suki desu.",
+        "chinese": "喜歡桃子。"
+      },
+      "memory_aid": "「momo」的發音聽起來很像中文「摸摸」，想像你輕輕『摸摸』一顆圓圓的桃子。桃子在台灣是很受歡迎的水果，尤其是水蜜桃，香甜多汁。這個詞也常用在日本的童話故事中，像『桃太郎 (Momotarou)』。常用來搭配動詞「食べる (taberu - 吃)」或形容詞「甘い (amai - 甜的)」。",
+      "advanced_phrase": {
+        "japanese": "甘い桃。",
+        "romaji": "amai momo.",
+        "chinese": "甜桃子。"
+      }
+    },
+    {
+      "id": 95,
+      "number": {
+        "japanese": "きゅうじゅうご",
+        "romaji": "kyuujuugo"
+      },
+      "word": {
+        "hiragana": "はな",
+        "romaji": "hana",
+        "kanji": "花",
+        "meaning": "花朵",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "花がきれいです。",
+        "romaji": "hana ga kirei desu.",
+        "chinese": "花很漂亮。"
+      },
+      "memory_aid": "「hana」的發音聽起來像「哈娜」，你可以想像花開得很漂亮，讓你開心地「哈！」了一聲。這個詞指的是各種各樣的「花」。在台灣，從公園、陽台到市場，處處可見美麗的花朵，賞花也是熱門活動，像是櫻花、杜鵑花等，所以這個詞很常用。它常搭配動詞「咲く (saku - 開花)」或形容詞「きれい (kirei - 漂亮)」。",
+      "advanced_phrase": {
+        "japanese": "花を飾る。",
+        "romaji": "hana o kazaru.",
+        "chinese": "裝飾花朵。"
+      }
+    },
+    {
+      "id": 96,
+      "number": {
+        "japanese": "きゅうじゅうろく",
+        "romaji": "kyuujuuroku"
+      },
+      "word": {
+        "hiragana": "さす",
+        "romaji": "sasu",
+        "kanji": "指す",
+        "meaning": "指向、指明",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "道を指します。",
+        "romaji": "michi o sashimasu.",
+        "chinese": "指路。"
+      },
+      "memory_aid": "「sasu」的發音聽起來像「撒蘇」，想像你指著方向說「撒～速～（sasu）！就是那邊！」。這個動詞最常用來表示用手指『指向』某個方向、某個人或某物。在台灣，我們常常會替別人指路，或指著某樣東西說「就是那個」，這個詞很實用。常用句型是「方向 を 指す」或「人 を 指す」。此外，這個詞還有另一個常見的漢字『差す (sasu)』，表示傘『撐開』或雨『下』的意思，但N5通常會先學『指す』。",
+      "advanced_phrase": {
+        "japanese": "あっちを指す。",
+        "romaji": "acchi o sasu.",
+        "chinese": "指向那邊。"
+      }
+    },
+    {
+      "id": 97,
+      "number": {
+        "japanese": "きゅうじゅうなな",
+        "romaji": "kyuujuunana"
+      },
+      "word": {
+        "hiragana": "かさ",
+        "romaji": "kasa",
+        "kanji": "傘",
+        "meaning": "傘",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "傘を差します。",
+        "romaji": "kasa o sashimasu.",
+        "chinese": "撐傘。"
+      },
+      "memory_aid": "「kasa」的發音聽起來像「咖薩」，想像下雨時，你拿出傘『喀嚓』一聲打開，趕緊拿『撒（遮）』。在台灣，午後雷陣雨很常見，所以出門帶『傘』是必備的，這個詞非常實用。通常會搭配動詞「差す (sasu - 撐開/舉起)」來表示『撐傘』。",
+      "advanced_phrase": {
+        "japanese": "この傘。",
+        "romaji": "kono kasa.",
+        "chinese": "這把傘。"
+      }
+    },
+    {
+      "id": 98,
+      "number": {
+        "japanese": "きゅうじゅうはち",
+        "romaji": "kyuujuuhachi"
+      },
+      "word": {
+        "hiragana": "しる",
+        "romaji": "shiru",
+        "kanji": "知る",
+        "meaning": "知道、瞭解",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "私は彼の名前を知っています。",
+        "romaji": "watashi wa kare no namae o shitte imasu.",
+        "chinese": "我知道他的名字。"
+      },
+      "memory_aid": "「shiru」的發音聽起來像「西嚕」，想像你看到什麼東西『稀奇古怪』，然後就『知道』了。這個動詞表示『獲得資訊』或『瞭解某事』的狀態。在台灣，我們常常會說『我知道了』、『你知不知道』，這個詞非常常用。值得注意的是，當表示『知道』這個狀態時，通常會用『知っています (shitte imasu)』，也就是動詞的て形加上『いる』。與『知らない (shiranai - 不知道)』、『分かる (wakaru - 明白/懂)』可以一起學習。",
+      "advanced_phrase": {
+        "japanese": "それを知る。",
+        "romaji": "sore o shiru.",
+        "chinese": "知道那個。"
+      }
+    },
+    {
+      "id": 99,
+      "number": {
+        "japanese": "きゅうじゅうきゅう",
+        "romaji": "kyuujuukyuu"
+      },
+      "word": {
+        "hiragana": "なまえ",
+        "romaji": "namae",
+        "kanji": "名前",
+        "meaning": "名字、姓名",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "お名前は何ですか？",
+        "romaji": "onamae wa nan desu ka?",
+        "chinese": "你叫什麼名字？"
+      },
+      "memory_aid": "「namae」的發音聽起來像「那媽欸」，想像你問別人名字時，指著對方說「『那（na）』個『媽（ma）』媽的『欸』兒子，叫什麼名字？」。這是初次見面時最常用到的基本詞彙之一。在台灣，問名字也是社交禮儀的一部分。前面常加上「お (o)」變成「お名前」，表示尊敬，更禮貌。",
+      "advanced_phrase": {
+        "japanese": "名前を言う。",
+        "romaji": "namae o iu.",
+        "chinese": "說出名字。"
+      }
+    },
+    {
+      "id": 100,
+      "number": {
+        "japanese": "ひゃく",
+        "romaji": "hyaku"
+      },
+      "word": {
+        "hiragana": "すう",
+        "romaji": "suu",
+        "kanji": "吸う",
+        "meaning": "吸、抽（煙）",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "空気を吸います。",
+        "romaji": "kuuki o suimasu.",
+        "chinese": "吸空氣。"
+      },
+      "memory_aid": "「suu」的發音聽起來像「蘇～」，想像你吸著東西時發出的聲音，或是吸珍珠奶茶時，吸管會發出『蘇～』的一聲。這個動詞可以指吸入空氣、液體，也可以特指『抽煙』。在台灣，雖然公共場所禁菸，但『抽煙』這個動作在生活中還是會遇到，或者單純指『吸氣』。常用句型是「名詞 を 吸う」，表示吸入或抽吸某物。例如：「タバコを吸う」(抽煙)。",
+      "advanced_phrase": {
+        "japanese": "息を吸う。",
+        "romaji": "iki o suu.",
+        "chinese": "吸氣。"
+      }
+    },
+    {
+      "id": 101,
+      "number": {
+        "japanese": "ひゃくいち",
+        "romaji": "hyakuichi"
+      },
+      "word": {
+        "hiragana": "きれい",
+        "romaji": "kirei",
+        "kanji": "綺麗",
+        "meaning": "漂亮、美麗；乾淨",
+        "part_of_speech": "形容動詞／名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "桜がとてもきれいです。",
+        "romaji": "sakura ga totemo kirei desu.",
+        "chinese": "櫻花非常漂亮。"
+      },
+      "memory_aid": "「kirei」的發音聽起來像「奇咧」，想像你看到很漂亮或很乾淨的東西時，會驚呼一聲「奇（ki）怪，這麼美，『咧』開嘴笑了」。這個詞在日語中非常常用，有兩個主要意思：一是**『漂亮、美麗』**，例如：人、風景、衣服；二是**『乾淨、整潔』**，例如：房間、手。在台灣，我們也常常讚美東西漂亮或環境乾淨，所以這個詞會很常用到。作為形容動詞時，連接名詞需要加『な』，例如『きれいな花 (kirei na hana - 漂亮的花)』。",
+      "advanced_phrase": {
+        "japanese": "部屋がきれい。",
+        "romaji": "heya ga kirei.",
+        "chinese": "房間很乾淨。"
+      }
+    },
+    {
+      "id": 102,
+      "number": {
+        "japanese": "ひゃくに",
+        "romaji": "hyakuni"
+      },
+      "word": {
+        "hiragana": "くうき",
+        "romaji": "kuuki",
+        "kanji": "空気",
+        "meaning": "空氣",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "新鮮な空気を吸います。",
+        "romaji": "shinsen na kuuki o suimasu.",
+        "chinese": "吸新鮮空氣。"
+      },
+      "memory_aid": "「kuuki」的發音聽起來像「哭氣」，想像空氣汙染很嚴重，讓你難過到想「哭泣」。這個詞指的是我們呼吸的『空氣』。在台灣，大家越來越重視空氣品質，所以這個詞會很常用到。它常搭配動詞「吸う (suu - 吸入)」或形容詞「新鮮な (shinsen na - 新鮮的)」。",
+      "advanced_phrase": {
+        "japanese": "空気がきれい。",
+        "romaji": "kuuki ga kirei.",
+        "chinese": "空氣很乾淨。"
+      }
+    },
+    {
+      "id": 103,
+      "number": {
+        "japanese": "ひゃくさん",
+        "romaji": "hyakusan"
+      },
+      "word": {
+        "hiragana": "すむ",
+        "romaji": "sumu",
+        "kanji": "住む",
+        "meaning": "居住、居住",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "台北に住んでいます。",
+        "romaji": "taipei ni sunde imasu.",
+        "chinese": "住在台北。"
+      },
+      "memory_aid": "這是個自動詞，表示『住在某處』的狀態。發音「sumu」聽起來像「蘇姆」，想像你住的地方很舒服（舒服），所以就「住（蘇姆）」下來了。在台灣，我們每個人都有自己居住的地方，無論是公寓、透天厝，都會用到這個詞。日語中表示居住的狀態時，通常會用『住んでいます (sunde imasu)』，也就是動詞的て形加上『いる』。常用句型是「場所 に 住む」。",
+      "advanced_phrase": {
+        "japanese": "どこに住む？",
+        "romaji": "doko ni sumu?",
+        "chinese": "住在哪裡？"
+      }
+    },
+    {
+      "id": 104,
+      "number": {
+        "japanese": "ひゃくよん",
+        "romaji": "hyakuyon"
+      },
+      "word": {
+        "hiragana": "いなか",
+        "romaji": "inaka",
+        "kanji": "田舎",
+        "meaning": "鄉下、鄉村、老家",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "田舎に住んでいます。",
+        "romaji": "inaka ni sunde imasu.",
+        "chinese": "住在鄉下。"
+      },
+      "memory_aid": "「inaka」的發音聽起來像「伊那卡」，想像你到了鄉下，看到「伊（伊）」個小村莊，大家都騎「那卡」（台語「那輛」的諧音）腳踏車。這個詞通常指非都市地區，有時也帶有懷舊或純樸的感覺。在台灣，許多人也會回到鄉下老家探親或度假，感受純樸的生活氣息。常用來搭配動詞「住む (sumu - 居住)」或形容詞「靜か (shizuka - 安靜的)」。",
+      "advanced_phrase": {
+        "japanese": "私の田舎。",
+        "romaji": "watashi no inaka.",
+        "chinese": "我的老家。"
+      }
+    },
+    {
+      "id": 105,
+      "number": {
+        "japanese": "ひゃくご",
+        "romaji": "hyakugo"
+      },
+      "word": {
+        "hiragana": "すわる",
+        "romaji": "suwaru",
+        "kanji": "座る",
+        "meaning": "坐下",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "椅子に座ります。",
+        "romaji": "isu ni suwarimasu.",
+        "chinese": "坐在椅子上。"
+      },
+      "memory_aid": "這是個自動詞，表示『自己坐下』的動作。發音「suwaru」聽起來像「蘇挖嚕」，想像你坐下來時，椅子發出『蘇～瓦～嚕～』的聲音。這個詞是日常生活中非常基本的動作。在台灣，我們每天都會坐下，不論是坐公車、坐捷運、坐餐廳，都會用到。常用句型是「場所 に 座る」，表示坐在某個地方。",
+      "advanced_phrase": {
+        "japanese": "ここに座る。",
+        "romaji": "koko ni suwaru.",
+        "chinese": "坐在這裡。"
+      }
+    },
+    {
+      "id": 106,
+      "number": {
+        "japanese": "ひゃくろく",
+        "romaji": "hyakuroku"
+      },
+      "word": {
+        "hiragana": "らく",
+        "romaji": "raku",
+        "kanji": "楽",
+        "meaning": "輕鬆、舒適；快樂、愉快",
+        "part_of_speech": "形容動詞／名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "この椅子は楽です。",
+        "romaji": "kono isu wa raku desu.",
+        "chinese": "這把椅子很舒服。"
+      },
+      "memory_aid": "「raku」的發音聽起來像「拉褲」，想像你穿著很寬鬆的「褲子（褲）」時，感覺很『輕鬆、舒服』。這個詞在日語中非常常用，可以指身體上的舒適（例如：輕鬆的姿勢、舒服的椅子），也可以指心情上的愉快、不費力（例如：輕鬆的工作、簡單的事情）。在台灣，大家都很追求生活的『輕鬆自在』，所以這個詞很實用。作為形容動詞時，連接名詞需要加『な』，例如『楽な仕事 (raku na shigoto - 輕鬆的工作)』。",
+      "advanced_phrase": {
+        "japanese": "生活が楽。",
+        "romaji": "seikatsu ga raku.",
+        "chinese": "生活輕鬆。"
+      }
+    },
+    {
+      "id": 107,
+      "number": {
+        "japanese": "ひゃくなな",
+        "romaji": "hyakunana"
+      },
+      "word": {
+        "hiragana": "だす",
+        "romaji": "dasu",
+        "kanji": "出す",
+        "meaning": "拿出、取出；寄出；提出",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "手紙を出します。",
+        "romaji": "tegami o dashimasu.",
+        "chinese": "寄信。"
+      },
+      "memory_aid": "這是個他動詞，表示你**主動把東西從裡面拿出來**或**送出去**。發音「dasu」聽起來像「打輸」，想像你把錢「打」開錢包「輸」給別人（付錢），或是把信件「打」開郵筒「輸」出去（寄出）。這個詞用途很廣，可以指拿出物品、寄送（信件、包裹）、提出（意見、問題）。在台灣，我們常常會寄信、交作業、提出想法，這個詞非常實用。常用句型是「名詞 を 出す」。",
+      "advanced_phrase": {
+        "japanese": "ごみを出る。",
+        "romaji": "gomi o dasu.",
+        "chinese": "倒垃圾。"
+      }
+    },
+    {
+      "id": 108,
+      "number": {
+        "japanese": "ひゃくはち",
+        "romaji": "hyakuhachi"
+      },
+      "word": {
+        "hiragana": "ごみ",
+        "romaji": "gomi",
+        "kanji": "",
+        "meaning": "垃圾、廢棄物",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ごみを出します。",
+        "romaji": "gomi o dashimasu.",
+        "chinese": "倒垃圾。"
+      },
+      "memory_aid": "「gomi」的發音聽起來像「夠米」，想像垃圾多到已經『夠了！米（米粒般多）！』，所以該倒垃圾了。這個詞在日常生活中非常常用，特別是涉及到環境清潔和垃圾分類時。在台灣，每天都要倒垃圾，這已經是生活的一部分，所以這個詞會很常用到。常搭配動詞「出す (dasu - 丟出/倒出)」形成「ごみを出す」(倒垃圾)。",
+      "advanced_phrase": {
+        "japanese": "ごみを捨てる。",
+        "romaji": "gomi o suteru.",
+        "chinese": "丟垃圾。"
+      }
+    },
+    {
+      "id": 109,
+      "number": {
+        "japanese": "ひゃくきゅう",
+        "romaji": "hyakukyuu"
+      },
+      "word": {
+        "hiragana": "たつ",
+        "romaji": "tatsu",
+        "kanji": "立つ",
+        "meaning": "站立、站起來",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ここで立ってください。",
+        "romaji": "koko de tatte kudasai.",
+        "chinese": "請在這裡站立。"
+      },
+      "memory_aid": "這是個自動詞，表示『自己站起來』的動作。發音「tatsu」聽起來像「踏茲」，想像你用雙腳「踏」在地上，「站直（茲）」。在台灣，上課、搭公車時，老師或廣播常會提醒大家『站起來』或『請站穩』，這個詞非常基礎且實用。它和「座る (suwaru - 坐下)」是相對的詞，可以一起記住。常用句型是「場所 に 立つ」或「～て立つ」。",
+      "advanced_phrase": {
+        "japanese": "電車で立つ。",
+        "romaji": "densha de tatsu.",
+        "chinese": "在電車上站著。"
+      }
+    },
+    {
+      "id": 110,
+      "number": {
+        "japanese": "ひゃくじゅう",
+        "romaji": "hyakujuu"
+      },
+      "word": {
+        "hiragana": "バスてい",
+        "romaji": "basutei",
+        "kanji": "バス停",
+        "meaning": "公車站牌、巴士站",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "バス停で待ちます。",
+        "romaji": "basutei de machimasu.",
+        "chinese": "在公車站牌等候。"
+      },
+      "memory_aid": "這個詞是由外來語「バス (basu - bus)」和漢字「停 (tei - 停止)」組合而成的，非常好記！發音「basutei」聽起來就像「巴士停」，跟中文意思幾乎一樣。在台灣，公車是很多人日常通勤的交通工具，『公車站牌』是等公車的地方，這個詞非常生活化。常用來搭配動詞「待つ (matsu - 等待)」或「降りる (oriru - 下車)」。",
+      "advanced_phrase": {
+        "japanese": "次のバス停。",
+        "romaji": "tsugi no basutei.",
+        "chinese": "下一個公車站牌。"
+      }
+    },
+    {
+      "id": 111,
+      "number": {
+        "japanese": "ひゃくじゅういち",
+        "romaji": "hyakujuuichi"
+      },
+      "word": {
+        "hiragana": "たのむ",
+        "romaji": "tanomu",
+        "kanji": "頼む",
+        "meaning": "拜託、請求、委託",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "手伝いを頼みます。",
+        "romaji": "tetsudai o tanomimasu.",
+        "chinese": "拜託幫忙。"
+      },
+      "memory_aid": "「tanomu」的發音聽起來像「他no姆」，想像你『拜託』別人時，會很誠懇地說『他（ta）能（no）幫忙嗎？嗯（mu）！』這個詞在日常生活中非常常用，特別是當你需要別人協助或請求某事時。在台灣，我們也常常會『拜託』朋友或家人幫忙，或是在餐廳點餐時『拜託』服務生。常用句型是「人 に 物 を 頼む」(拜託某人某事) 或直接說「お願いします (onegaishimasu - 拜託了)」，「頼む」是它的原型。",
+      "advanced_phrase": {
+        "japanese": "頼むよ！",
+        "romaji": "tanomu yo!",
+        "chinese": "拜託你了！"
+      }
+    },
+    {
+      "id": 112,
+      "number": {
+        "japanese": "ひゃくじゅうに",
+        "romaji": "hyakujuuni"
+      },
+      "word": {
+        "hiragana": "ちがう",
+        "romaji": "chigau",
+        "kanji": "違う",
+        "meaning": "不同、不對、錯了",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "それは違います。",
+        "romaji": "sore wa chigaimasu.",
+        "chinese": "那個不對。"
+      },
+      "memory_aid": "「chigau」的發音聽起來像「奇搞」，想像你發現事情不對勁時，會驚呼「奇（chi）怪！搞（gau）錯了！」。這個詞在日語中非常常用，當你想表達『不對』、『不一樣』或『錯了』的時候就會用到。例如，當別人問你問題，但答案不對時，就可以說『違います (chigaimasu - 不對)』。在台灣，我們也常常會說『不對喔』、『搞錯了』來糾正錯誤或表達差異。",
+      "advanced_phrase": {
+        "japanese": "私とは違う。",
+        "romaji": "watashi to wa chigau.",
+        "chinese": "跟我不同。"
+      }
+    },
+    {
+      "id": 113,
+      "number": {
+        "japanese": "ひゃくじゅうさん",
+        "romaji": "hyakujuusan"
+      },
+      "word": {
+        "hiragana": "ふく",
+        "romaji": "fuku",
+        "kanji": "服",
+        "meaning": "衣服、服裝",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "新しい服を買います。",
+        "romaji": "atarashii fuku o kaimasu.",
+        "chinese": "買新衣服。"
+      },
+      "memory_aid": "「fuku」的發音聽起來像「福酷」，想像你穿上新衣服時，感覺很有「福」氣，穿起來「酷」酷的。這個詞是統稱各種『衣服』的總稱。在台灣，我們每天出門都要穿衣服，逛街買衣服也是很常見的活動，所以這個詞非常實用。常搭配動詞「著る (kiru - 穿)」或「買う (kau - 買)」。",
+      "advanced_phrase": {
+        "japanese": "服を選ぶ。",
+        "romaji": "fuku o erabu.",
+        "chinese": "選衣服。"
+      }
+    },
+    {
+      "id": 114,
+      "number": {
+        "japanese": "ひゃくじゅうよん",
+        "romaji": "hyakujuuyon"
+      },
+      "word": {
+        "hiragana": "つかう",
+        "romaji": "tsukau",
+        "kanji": "使う",
+        "meaning": "使用、利用",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ペンを使います。",
+        "romaji": "pen o tsukaimasu.",
+        "chinese": "用筆。"
+      },
+      "memory_aid": "「tsukau」的發音聽起來像「茲卡烏」，想像你用東西時，動作有點『粗糙（茲卡烏）』。這個動詞在日常生活中非常常用，無論是使用工具、電器、金錢、時間，都可以用這個詞。在台灣，我們每天都會『使用』各種物品，所以這個詞會很常用到。常用句型是「名詞 を 使う」，表示使用某物。",
+      "advanced_phrase": {
+        "japanese": "お金を使う。",
+        "romaji": "okane o tsukau.",
+        "chinese": "花錢。"
+      }
+    },
+    {
+      "id": 115,
+      "number": {
+        "japanese": "ひゃくじゅうご",
+        "romaji": "hyakujuugo"
+      },
+      "word": {
+        "hiragana": "パソコン",
+        "romaji": "pasokon",
+        "kanji": "",
+        "meaning": "個人電腦、筆記型電腦",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "パソコンを使います。",
+        "romaji": "pasokon o tsukaimasu.",
+        "chinese": "使用電腦。"
+      },
+      "memory_aid": "這是個外來語，是英文「**per**sonal **com**puter」的簡稱。發音「pasokon」聽起來像「趴搜控」，想像你坐在電腦前『趴著』，然後把電腦『操控』起來。在台灣，無論是工作、學習還是娛樂，電腦都是不可或缺的工具，從桌上型電腦到筆記型電腦都統稱這個詞。常用來搭配動詞「使う (tsukau - 使用)」或「買う (kau - 買)」。",
+      "advanced_phrase": {
+        "japanese": "新しいパソコン。",
+        "romaji": "atarashii pasokon.",
+        "chinese": "新電腦。"
+      }
+    },
+    {
+      "id": 116,
+      "number": {
+        "japanese": "ひゃくじゅうろく",
+        "romaji": "hyakujuuroku"
+      },
+      "word": {
+        "hiragana": "つく",
+        "romaji": "tsuku",
+        "kanji": "點く",
+        "meaning": "點亮、開啟（燈、電器等）",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "電気がつきます。",
+        "romaji": "denki ga tsukimasu.",
+        "chinese": "燈亮了。"
+      },
+      "memory_aid": "這是個自動詞，表示燈或電器『自己亮了/開了』。發音「tsuku」聽起來像「茲哭」，想像燈亮起來，你開心得『滋滋（tsu）地哭（ku）』出來。這個詞最常用來描述電燈、電視、冷氣等電器設備的開啟狀態。和「消す (kesu - 關掉，他動詞)」是相對的詞，可以一起記住。在台灣，我們每天都會開燈、開電器，很生活化。",
+      "advanced_phrase": {
+        "japanese": "電気がつく。",
+        "romaji": "denki ga tsuku.",
+        "chinese": "燈亮了。"
+      }
+    },
+    {
+      "id": 117,
+      "number": {
+        "japanese": "ひゃくじゅうなな",
+        "romaji": "hyakujuunana"
+      },
+      "word": {
+        "hiragana": "つくる",
+        "romaji": "tsukuru",
+        "kanji": "作る",
+        "meaning": "製作、創造、製造",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "料理を作ります。",
+        "romaji": "ryouri o tsukurimasu.",
+        "chinese": "做飯。"
+      },
+      "memory_aid": "「tsukuru」的發音聽起來像「茲哭嚕」，想像你做東西時，嘴裡唸唸有詞『滋滋（tsu）地哭（ku）了，終於做（ru）好了！』這個動詞在日語中非常常用，指從無到有地『製作』出某樣東西，無論是做飯、蓋房子、寫文章，甚至製造機器，都可以用這個詞。在台灣，很多人喜歡做菜、做手作，這個詞會很常用到。常用句型是「名詞 を 作る」。",
+      "advanced_phrase": {
+        "japanese": "ケーキを作る。",
+        "romaji": "keeki o tsukuru.",
+        "chinese": "做蛋糕。"
+      }
+    },
+    {
+      "id": 118,
+      "number": {
+        "japanese": "ひゃくじゅうはち",
+        "romaji": "hyakujuuhachi"
+      },
+      "word": {
+        "hiragana": "かぐ",
+        "romaji": "kagu",
+        "kanji": "家具",
+        "meaning": "家具",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "新しい家具を買います。",
+        "romaji": "atarashii kagu o kaimasu.",
+        "chinese": "買新家具。"
+      },
+      "memory_aid": "「kagu」的發音聽起來像「咖咕」，想像你搬新家，擺放家具時，跟朋友說：「這些『咖（這）』『咕（個）』家具真重啊！」這個詞是泛指所有家裡的桌子、椅子、櫃子、床等物品。在台灣， IKEA 和各式家具店很受歡迎，大家都會去挑選家裡需要的『家具』，所以這個詞非常實用。常用來搭配動詞「買う (kau - 買)」或「置く (oku - 放置)」。",
+      "advanced_phrase": {
+        "japanese": "家具を置く。",
+        "romaji": "kagu o oku.",
+        "chinese": "擺放家具。"
+      }
+    },
+    {
+      "id": 119,
+      "number": {
+        "japanese": "ひゃくじゅうきゅう",
+        "romaji": "hyakujuukyuu"
+      },
+      "word": {
+        "hiragana": "とぶ",
+        "romaji": "tobu",
+        "kanji": "飛ぶ",
+        "meaning": "飛翔、飛、跳",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "鳥が空を飛びます。",
+        "romaji": "tori ga sora o tobimasu.",
+        "chinese": "鳥在天空飛翔。"
+      },
+      "memory_aid": "這是個自動詞，表示『自己飛起來』或『跳起來』的動作。發音「tobu」聽起來像「脫不」，想像鳥兒『脫』離地面，飛『不』見了！這個詞不僅指鳥類或飛機『飛翔』，也可以指人或物體『跳躍』或『飛出去』。在台灣，我們常看到鳥在空中飛，或小朋友在公園裡跳來跳去，這個詞都很實用。常用句型是「名詞 が 飛ぶ」。",
+      "advanced_phrase": {
+        "japanese": "高く飛ぶ。",
+        "romaji": "takaku tobu.",
+        "chinese": "高高飛翔。"
+      }
+    },
+    {
+      "id": 120,
+      "number": {
+        "japanese": "ひゃくにじゅう",
+        "romaji": "hyakunijuu"
+      },
+      "word": {
+        "hiragana": "ひこうき",
+        "romaji": "hikouki",
+        "kanji": "飛行機",
+        "meaning": "飛機",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "飛行機で旅行します。",
+        "romaji": "hikouki de ryokou shimasu.",
+        "chinese": "搭飛機旅行。"
+      },
+      "memory_aid": "「hikouki」的發音聽起來像「飛空機」，跟中文的『飛機』發音和意思都很像，非常好記！想像飛機在空中「呼（hi）口（kou）氣（ki）」地飛翔。在台灣，搭飛機出國旅行或看飛機起降是很常見的活動，尤其是桃園機場。這個詞常用來搭配動詞「乗る (noru - 乘坐)」或「飛ぶ (tobu - 飛)」。",
+      "advanced_phrase": {
+        "japanese": "大きな飛行機。",
+        "romaji": "ookina hikouki.",
+        "chinese": "大飛機。"
+      }
+    },
+    {
+      "id": 121,
+      "number": {
+        "japanese": "ひゃくにじゅういち",
+        "romaji": "hyakunijuuichi"
+      },
+      "word": {
+        "hiragana": "とめる",
+        "romaji": "tomeru",
+        "kanji": "止める",
+        "meaning": "停止、停下；關掉（水、電）",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "車を止めます。",
+        "romaji": "kuruma o tomemasu.",
+        "chinese": "停車。"
+      },
+      "memory_aid": "這是個他動詞，表示你**主動讓某物停下來**。發音「tomeru」聽起來像「脫沒魯」，想像你把東西停下來，說：「脫（to）離！沒（me）辦法動了！魯（ru）蛇！」這個詞用途很廣，可以指停車、停止（音樂、水、電），甚至是阻止某人。在台灣，開車騎車都會遇到『停車』的需求，家裡也會『關掉』水龍頭或電燈，非常實用。常用句型是「名詞 を 止める」。",
+      "advanced_phrase": {
+        "japanese": "水を止める。",
+        "romaji": "mizu o tomeru.",
+        "chinese": "關水。"
+      }
+    },
+    {
+      "id": 122,
+      "number": {
+        "japanese": "ひゃくにじゅうに",
+        "romaji": "hyakunijuuni"
+      },
+      "word": {
+        "hiragana": "とまる",
+        "romaji": "tomaru",
+        "kanji": "止まる",
+        "meaning": "停止、停住",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "車が止まります。",
+        "romaji": "kuruma ga tomarimasu.",
+        "chinese": "車子停了。"
+      },
+      "memory_aid": "這是個**自動詞**，表示東西『自己停了』。發音「tomaru」聽起來像「拖馬路」，想像一輛車在馬路上『拖著拖著』就自己停下來了。這個詞常用來描述物體、交通工具、時間等自己停止的狀態。和「止める (tomeru - 停止、停下，他動詞)」是相對的詞，請注意區分：`止まる`是『自己停』，`止める`是『讓它停』。在台灣，我們每天都會看到公車、汽車在路邊『停下』來，很生活化。",
+      "advanced_phrase": {
+        "japanese": "電車が止まる。",
+        "romaji": "densha ga tomaru.",
+        "chinese": "電車停了。"
+      }
+    },
+    {
+      "id": 123,
+      "number": {
+        "japanese": "ひゃくにじゅうさん",
+        "romaji": "hyakunijuusan"
+      },
+      "word": {
+        "hiragana": "とけい",
+        "romaji": "tokei",
+        "kanji": "時計",
+        "meaning": "鐘錶、時鐘、手錶",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "時計を見ます。",
+        "romaji": "tokei o mimasu.",
+        "chinese": "看時鐘／手錶。"
+      },
+      "memory_aid": "「tokei」的發音聽起來像「脫K」，想像時間一到，『脫』下鞋子就去『K』書，或者手錶發出『滴答滴』的聲音。這個詞泛指所有計時的工具，包括掛鐘、鬧鐘、手錶等。在台灣，我們每天都會看時鐘或手錶確認時間，所以這個詞非常實用。常用來搭配動詞「見る (miru - 看)」或「買う (kau - 買)」。",
+      "advanced_phrase": {
+        "japanese": "新しい時計。",
+        "romaji": "atarashii tokei.",
+        "chinese": "新錶。"
+      }
+    },
+    {
+      "id": 124,
+      "number": {
+        "japanese": "ひゃくにじゅうよん",
+        "romaji": "hyakunijuuyon"
+      },
+      "word": {
+        "hiragana": "とる",
+        "romaji": "toru",
+        "kanji": "取る / 撮る",
+        "meaning": "拿、取；拍照",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "寫真を撮ります。",
+        "romaji": "shashin o torimasu.",
+        "chinese": "拍照。"
+      },
+      "memory_aid": "「toru」的發音聽起來像「偷嚕」，想像你『偷偷（to）』地把東西『嚕（ru）』走，或者『偷偷（to）』地按快門拍照。這個動詞有很多意思，主要有兩個常用漢字：\n1.  **取る (toru)：** 指『拿、取』東西，例如：『本を取る (hon o toru - 拿書)』、『お金を取る (okane o toru - 拿錢)』。\n2.  **撮る (toru)：** 專指『拍照』、『攝影』，例如：『寫真を撮る (shashin o toru - 拍照)』、『ビデオを撮る (bideo o toru - 錄影)』。\n這兩個意思在日常生活中都很常用。在台灣，我們每天都會『拿』東西，也常常『拍照』留念，所以這個詞非常實用，要根據上下文判斷是哪個意思喔！",
+      "advanced_phrase": {
+        "japanese": "カメラで撮る。",
+        "romaji": "kamera de toru.",
+        "chinese": "用相機拍照。"
+      }
+    },
+    {
+      "id": 125,
+      "number": {
+        "japanese": "ひゃくにじゅうご",
+        "romaji": "hyakunijuugo"
+      },
+      "word": {
+        "hiragana": "たな",
+        "romaji": "tana",
+        "kanji": "棚",
+        "meaning": "架子、置物架",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "棚に本を置きます。",
+        "romaji": "tana ni hon o okimasu.",
+        "chinese": "把書放在架子上。"
+      },
+      "memory_aid": "「tana」的發音聽起來像「他那」，想像你指著一個架子說：「『他（ta）』的書就放在『那（na）』個『架子』上」。這個詞可以指各種用來放置物品的架子，比如書架、櫥櫃裡的層板、展示架等。在台灣，家裡或商店裡都會有各式各樣的『架子』來收納或展示物品，非常實用。常用來搭配助詞「に」和動詞「置く (oku - 放置)」。",
+      "advanced_phrase": {
+        "japanese": "高い棚。",
+        "romaji": "takai tana.",
+        "chinese": "高架子。"
+      }
+    },
+    {
+      "id": 126,
+      "number": {
+        "japanese": "ひゃくにじゅうろく",
+        "romaji": "hyakunijuuroku"
+      },
+      "word": {
+        "hiragana": "うえ",
+        "romaji": "ue",
+        "kanji": "上",
+        "meaning": "上面、上方、之上",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "機の上に本があります。",
+        "romaji": "tsukue no ue ni hon ga arimasu.",
+        "chinese": "書在桌上。"
+      },
+      "memory_aid": "The pronunciation \"ue\" sounds a bit like saying \"oo-eh\". Imagine something is 'oo-eh' (哦～欸～) up high! This word is super common for describing location, indicating something is 'on top of' or 'above' something else. In Taiwan, we often talk about things being 'on the table' or 'upstairs', so you'll use this word a lot. It's often used with the particle 'に' (ni) to indicate location, or 'の' (no) to show possession or relationship (e.g., '機の上' - on the desk).",
+      "advanced_phrase": {
+        "japanese": "空の上。",
+        "romaji": "sora no ue.",
+        "chinese": "天空之上。"
+      }
+    },
+    {
+      "id": 127,
+      "number": {
+        "japanese": "ひゃくにじゅうなな",
+        "romaji": "hyakunijuunana"
+      },
+      "word": {
+        "hiragana": "しゃしん",
+        "romaji": "shashin",
+        "kanji": "寫真",
+        "meaning": "照片、相片",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "寫真を撮ります。",
+        "romaji": "shashin o torimasu.",
+        "chinese": "拍照。"
+      },
+      "memory_aid": "「shashin」的發音聽起來像「撒心」，想像你拍出很棒的『照片』，開心到『撒』了（灑）一地的花瓣，心花怒放。這個詞指的就是我們用相機或手機拍出來的各種『照片』。在台灣，大家都很喜歡拍照，無論是自拍、合照、風景照，記錄生活點滴，所以這個詞非常實用。常搭配動詞「撮る (toru - 拍照)」形成「寫真を撮る」(拍照)。",
+      "advanced_phrase": {
+        "japanese": "可愛い寫真。",
+        "romaji": "kawaii shashin.",
+        "chinese": "可愛的照片。"
+      }
+    },
+    {
+      "id": 128,
+      "number": {
+        "japanese": "ひゃくにじゅうはち",
+        "romaji": "hyakunijuuhachi"
+      },
+      "word": {
+        "hiragana": "なく",
+        "romaji": "naku",
+        "kanji": "泣く / 鳴く",
+        "meaning": "哭泣；（動物、鳥）鳴叫",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "赤ちゃんが泣いています。",
+        "romaji": "akachan ga naite imasu.",
+        "chinese": "嬰兒正在哭泣。"
+      },
+      "memory_aid": "「naku」的發音聽起來像「那哭」，想像小朋友「那（na）」麼傷心，所以「哭（ku）」了。這個詞有兩個主要且常用的意思：\n1.  **泣く (naku)：** 指人因為悲傷、感動等情緒而『哭泣』。例如：『悲しくて泣く (kanashikute naku - 傷心而哭)』。\n2.  **鳴く (naku)：** 指動物或鳥類發出叫聲、『鳴叫』。例如：『犬が鳴く (inu ga naku - 狗叫)』、『鳥が鳴く (tori ga naku - 鳥鳴)』。\n在台灣，無論是大人小孩都會有哭泣的時候，或是聽到動物的叫聲，所以這兩個意思都很實用，可以根據上下文判斷。常搭配句型是「〜て泣く」(因為…而哭) 或「動物 が 鳴く」。",
+      "advanced_phrase": {
+        "japanese": "犬が鳴く。",
+        "romaji": "inu ga naku.",
+        "chinese": "狗叫。"
+      }
+    },{
+      "id": 129,
+      "number": {
+        "japanese": "ひゃくにじゅうきゅう",
+        "romaji": "hyakunijuukyuu"
+      },
+      "word": {
+        "hiragana": "とり",
+        "romaji": "tori",
+        "kanji": "鳥",
+        "meaning": "鳥、鳥類",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "鳥が飛んでいます。",
+        "romaji": "tori ga tonde imasu.",
+        "chinese": "鳥在飛。"
+      },
+      "memory_aid": "「tori」的發音聽起來像「偷利」，想像有隻鳥兒停在樹上，想『偷（to）』吃你的『梨（ri）』子。這個詞指的是各種『鳥類』。在台灣，無論是公園裡、山上還是天空，我們常常可以看到鳥兒，聽到鳥叫聲，是很自然且生活化的詞彙。常搭配動詞「飛ぶ (tobu - 飛翔)」或「鳴く (naku - 鳴叫)」。",
+      "advanced_phrase": {
+        "japanese": "小鳥の聲。",
+        "romaji": "kotori no koe.",
+        "chinese": "小鳥的叫聲。"
+      }
+    },
+    {
+      "id": 130,
+      "number": {
+        "japanese": "ひゃくさんじゅう",
+        "romaji": "hyakusanjuu"
+      },
+      "word": {
+        "hiragana": "あさ",
+        "romaji": "asa",
+        "kanji": "朝",
+        "meaning": "早上、上午",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "毎朝、コーヒーを飲みます。",
+        "romaji": "maiasa, koohii o nomimasu.",
+        "chinese": "每天早上喝咖啡。"
+      },
+      "memory_aid": "「asa」的發音聽起來像「阿薩」，想像你早上起床，伸個懶腰說「啊～薩（舒服）！」。這個詞指的是『白天開始到中午之前』這段時間。在台灣，早上是許多人上班、上學、吃早餐的時刻，是非常日常的詞彙。它和「晝 (hiru - 中午)」、「夜 (yoru - 晚上)」是一組時間詞，可以一起記住。常用助詞「に」表示在早上做某事。",
+      "advanced_phrase": {
+        "japanese": "朝ごはん。",
+        "romaji": "asagohan.",
+        "chinese": "早餐。"
+      }
+    },
+    {
+      "id": 131,
+      "number": {
+        "japanese": "ひゃくさんじゅういち",
+        "romaji": "hyakusanjuuichi"
+      },
+      "word": {
+        "hiragana": "なくす",
+        "romaji": "nakusu",
+        "kanji": "無くす",
+        "meaning": "弄丟、遺失、使失去",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "財布を無くしました。",
+        "romaji": "saifu o nakushimashita.",
+        "chinese": "我把錢包弄丟了。"
+      },
+      "memory_aid": "這是個他動詞，表示你**主動或不小心造成東西『消失』**。發音「nakusu」聽起來像「那哭死」，想像你把錢包『弄丟（nakusu）』了，難過得快『哭死』了。這個詞在日常生活中很常用，特別是當你找不到東西或失去某樣物品時。在台灣，不小心把東西弄丟是常有的事，所以這個詞很實用。和自動詞「なくなる (nakunaru - 消失、用完)」是相對的，一個是你讓它失去，一個是它自己消失。常用句型是「名詞 を 無くす」。",
+      "advanced_phrase": {
+        "japanese": "鍵を無くす。",
+        "romaji": "kagi o nakusu.",
+        "chinese": "弄丟鑰匙。"
+      }
+    },
+    {
+      "id": 132,
+      "number": {
+        "japanese": "ひゃくさんじゅうに",
+        "romaji": "hyakusanjuuni"
+      },
+      "word": {
+        "hiragana": "さいふ",
+        "romaji": "saifu",
+        "kanji": "財布",
+        "meaning": "錢包",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "財布を無くしました。",
+        "romaji": "saifu o nakushimashita.",
+        "chinese": "我把錢包弄丟了。"
+      },
+      "memory_aid": "「saifu」的發音聽起來像「塞福」，想像你把錢和發票都「塞」進錢包裡，希望它給你帶來好「福」氣。這個詞指的是用來裝錢、卡片和證件的『錢包』。在台灣，我們每天出門都會帶錢包，買東西、付錢都會用到，是日常生活中不可或缺的物品。常搭配動詞「無くす (nakusu - 弄丟)」或「開ける (akeru - 打開)」。",
+      "advanced_phrase": {
+        "japanese": "新しい財布。",
+        "romaji": "atarashii saifu.",
+        "chinese": "新錢包。"
+      }
+    },
+    {
+      "id": 133,
+      "number": {
+        "japanese": "ひゃくさんじゅうさん",
+        "romaji": "hyakusanjuusan"
+      },
+      "word": {
+        "hiragana": "ならう",
+        "romaji": "narau",
+        "kanji": "習う",
+        "meaning": "學習、學會",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "日本語を習います。",
+        "romaji": "nihongo o naraimasu.",
+        "chinese": "學日語。"
+      },
+      "memory_aid": "「narau」的發音聽起來像「那勞」，想像你在學習的時候，會很努力地說：「『那（na）』麼『勞（rau）』累也要學會！」這個詞主要指**向老師或前輩學習知識、技能**，是透過指導來獲得新知。和「勉強する (benkyou suru - 讀書、學習，強調自學或準備考試)」略有不同。在台灣，不論是學生學習新科目，或是大人學才藝，都會用到『學習』這個詞。常用句型是「科目／技能 を 習う」。",
+      "advanced_phrase": {
+        "japanese": "ピアノを習う。",
+        "romaji": "piano o narau.",
+        "chinese": "學鋼琴。"
+      }
     }
 
   ]

@@ -203,6 +203,43 @@
             margin-left: 5px;
             font-size: 12px;
         }
+        
+        .romaji-hidden .romaji-text {
+            display: none;
+        }
+        
+        .romaji-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .romaji-toggle:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
+        
+        .romaji-toggle.hidden {
+            background: #dc3545;
+        }
+        
+        .romaji-toggle.hidden:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
@@ -236,12 +273,18 @@
         </div>
     </div>
 
+    <!-- 懸浮的羅馬字切換按鈕 -->
+    <button class="romaji-toggle" onclick="toggleRomaji()" id="romajiToggle">
+        隱藏羅馬字<br><span style="font-size: 12px;">romaji o kakusu</span>
+    </button>
+
     <script>
         let allWords = [];
         let filteredWords = [];
         let isCompactView = false;
         let currentPOSFilter = '';
         let currentSort = { field: '', direction: 'asc' };
+        let romajiHidden = false;
 
         async function loadJSON() {
             try {
@@ -407,6 +450,22 @@
         function toggleView() {
             isCompactView = !isCompactView;
             displayWords();
+        }
+
+        function toggleRomaji() {
+            romajiHidden = !romajiHidden;
+            const container = document.querySelector('.container');
+            const toggleBtn = document.getElementById('romajiToggle');
+            
+            if (romajiHidden) {
+                container.classList.add('romaji-hidden');
+                toggleBtn.classList.add('hidden');
+                toggleBtn.innerHTML = '顯示羅馬字<br><span style="font-size: 12px;">romaji o hyōji</span>';
+            } else {
+                container.classList.remove('romaji-hidden');
+                toggleBtn.classList.remove('hidden');
+                toggleBtn.innerHTML = '隱藏羅馬字<br><span style="font-size: 12px;">romaji o kakusu</span>';
+            }
         }
 
         function filterWords(searchTerm) {
