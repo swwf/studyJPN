@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N5 單字卡</title>
+    <style>
+        :root {
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --accent-color: #007bff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --body-bg: #f4f7f9;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--body-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 40px;
+        }
+
+        #controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        #search-box {
+            padding: 10px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        #cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            min-height: 300px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px var(--shadow-color);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .word {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        ruby {
+            ruby-align: center;
+        }
+        
+        rt {
+            font-size: 0.5em;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .number {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: bold;
+            min-width: 40px;
+            text-align: center;
+        }
+        
+        .card-body {
+            flex-grow: 1;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info-grid dt {
+            font-weight: bold;
+            color: #555;
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+        .info-grid dd {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        
+        .example-section, .memory-section, .phrase-section {
+            margin-bottom: 15px;
+            padding: 12px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .section-title {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            font-size: 1em;
+        }
+        
+        .section-content {
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        .error-message {
+            text-align: center;
+            color: #dc3545;
+            padding: 40px;
+            font-size: 1.2em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: var(--accent-color);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>N5 單字卡片</h1>
+    <div id="controls">
+        <input type="text" id="search-box" placeholder="搜尋單字、羅馬字、中文翻譯...">
+    </div>
+    <div id="cards-container">
+        <div class="loading">載入中...</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const container = document.getElementById('cards-container');
+            const searchBox = document.getElementById('search-box');
+            let allWords = [];
+
+            const createCard = (wordData) => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                
+                card.innerHTML = `
+                    <div class="card-header">
+                        <div class="word">${wordData.word}</div>
+                        <div class="number">${wordData.number}</div>
+                    </div>
+                    <div class="card-body">
+                        <dl class="info-grid">
+                            <dt>羅馬字:</dt><dd>${wordData.romaji}</dd>
+                            <dt>漢字:</dt><dd>${wordData.kanji || '-'}</dd>
+                            <dt>翻譯:</dt><dd>${wordData.translation}</dd>
+                            <dt>詞性:</dt><dd>${wordData.pos}</dd>
+                        </dl>
+                        <div class="example-section">
+                            <div class="section-title">例句</div>
+                            <div class="section-content">${wordData.example}</div>
+                        </div>
+                        <div class="memory-section">
+                            <div class="section-title">記憶輔助</div>
+                            <div class="section-content">${wordData.memory_aid}</div>
+                        </div>
+                        <div class="phrase-section">
+                            <div class="section-title">N4常用短句</div>
+                            <div class="section-content">${wordData.n4_phrase}</div>
+                        </div>
+                    </div>
+                `;
+                
+                // 儲存搜尋用的文字
+                const searchText = [
+                    wordData.number, wordData.word, wordData.romaji, 
+                    wordData.kanji, wordData.translation, wordData.pos,
+                    wordData.example, wordData.memory_aid, wordData.n4_phrase
+                ].join(' ').toLowerCase();
+                card.dataset.searchText = searchText;
+                
+                return card;
+            };
+
+            const renderCards = (words) => {
+                container.innerHTML = '';
+                if (words.length === 0) {
+                    container.innerHTML = '<div class="error-message">沒有找到符合的單字</div>';
+                    return;
+                }
+                
+                words.forEach(word => {
+                    const card = createCard(word);
+                    container.appendChild(card);
+                });
+            };
+
+            const filterWords = () => {
+                const query = searchBox.value.toLowerCase().trim();
+                if (!query) {
+                    renderCards(allWords);
+                    return;
+                }
+                
+                const filtered = allWords.filter(word => {
+                    const searchText = [
+                        word.number, word.word, word.romaji, 
+                        word.kanji, word.translation, word.pos,
+                        word.example, word.memory_aid, word.n4_phrase
+                    ].join(' ').toLowerCase();
+                    return searchText.includes(query);
+                });
+                renderCards(filtered);
+            };
+
+            try {
+                const response = await fetch('N5 words.md');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: 無法讀取 N5 words.md`);
+                }
+                
+                const text = await response.text();
+                const lines = text.split('\n');
+                
+                // 跳過表頭和分隔線
+                const dataLines = lines.slice(2).filter(line => 
+                    line.trim() && 
+                    line.includes('|') && 
+                    !line.startsWith('--')
+                );
+                
+                allWords = dataLines.map((line, index) => {
+                    const columns = line.split('|').map(cell => cell.trim());
+                    
+                    if (columns.length < 11) {
+                        console.warn(`第 ${index + 3} 行格式不正確:`, line);
+                        return null;
+                    }
+                    
+                    return {
+                        number: columns[1] || `${index + 1}`,
+                        word: columns[2] || '',
+                        romaji: columns[3] || '',
+                        kanji: columns[4] || '',
+                        translation: columns[5] || '',
+                        pos: columns[6] || '',
+                        level: columns[7] || '',
+                        example: columns[8] || '',
+                        memory_aid: columns[9] || '',
+                        n4_phrase: columns[10] || ''
+                    };
+                }).filter(word => word !== null && word.word);
+                
+                console.log(`成功載入 ${allWords.length} 個單字`);
+                renderCards(allWords);
+                
+            } catch (error) {
+                console.error('載入檔案時發生錯誤:', error);
+                container.innerHTML = `
+                    <div class="error-message">
+                        載入失敗: ${error.message}<br>
+                        <small>請確認 N5 words.md 檔案存在於同一資料夾中</small>
+                    </div>
+                `;
+            }
+            
+            searchBox.addEventListener('input', filterWords);
+        });
+    </script>
+</body>
+</html> 

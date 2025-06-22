@@ -1,0 +1,479 @@
+/* 日語N5單字學習系統樣式表 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 固定頂部 */
+.fixed-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.level-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.controls {
+    padding: 15px 30px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.control-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: #667eea;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #5a6fd8;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+.btn-small {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+}
+
+.search-box, .filter-select {
+    padding: 8px 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-box {
+    width: 250px;
+}
+
+.filter-select {
+    width: 120px;
+}
+
+.search-box:focus, .filter-select:focus {
+    border-color: #667eea;
+}
+
+/* 詞性篩選按鈕 */
+.pos-filters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.pos-btn {
+    padding: 8px 16px;
+    border: 2px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.pos-btn.noun { border-color: #28a745; color: #28a745; }
+.pos-btn.verb { border-color: #007bff; color: #007bff; }
+.pos-btn.adjective { border-color: #ffc107; color: #856404; }
+.pos-btn.adverb { border-color: #6f42c1; color: #6f42c1; }
+.pos-btn.other { border-color: #6c757d; color: #6c757d; }
+
+.pos-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.pos-btn.active.noun { background: #28a745; color: white; }
+.pos-btn.active.verb { background: #007bff; color: white; }
+.pos-btn.active.adjective { background: #ffc107; color: #212529; }
+.pos-btn.active.adverb { background: #6f42c1; color: white; }
+.pos-btn.active.other { background: #6c757d; color: white; }
+
+/* 級別篩選 */
+.level-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.level-btn {
+    padding: 6px 12px;
+    border: 2px solid #667eea;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background: white;
+    color: #667eea;
+    transition: all 0.3s ease;
+}
+
+.level-btn:hover {
+    transform: translateY(-2px);
+}
+
+.level-btn.active {
+    background: #667eea;
+    color: white;
+}
+
+.word-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.word-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.word-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    border-color: #667eea;
+}
+
+.word-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.word-id {
+    background: #667eea;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* 詞性顏色標示 */
+.word-type {
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.word-type.noun { background: #28a745; }
+.word-type.verb { background: #007bff; }
+.word-type.adjective { background: #ffc107; color: #212529; }
+.word-type.adverb { background: #6f42c1; }
+.word-type.other { background: #6c757d; }
+
+.word-main {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.word-kanji {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.word-hiragana {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.word-romaji {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.word-meaning {
+    font-size: 1.4rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.example-section {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.example-section h4 {
+    color: #495057;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.example-text {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.japanese-text {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.romaji-text {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.chinese-text {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.memory-aid {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.memory-aid h4 {
+    color: #856404;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.memory-aid p {
+    color: #856404;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.advanced-phrase {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.advanced-phrase h4 {
+    color: #0c5460;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.stats {
+    padding: 20px 30px;
+    background: #f8f9fa;
+    text-align: center;
+    border-top: 1px solid #e9ecef;
+}
+
+.stats-item {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.stats-label {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.mode-toggle {
+    display: flex;
+    background: #e9ecef;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.mode-toggle button {
+    padding: 8px 16px;
+    border: none;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-toggle button.active {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.loading {
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2rem;
+    color: #6c757d;
+}
+
+.group-header {
+    background: #f8f9fa;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.group-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-count {
+    background: #667eea;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .word-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 15px 20px;
+    }
+    
+    .control-group {
+        justify-content: center;
+    }
+    
+    .search-box, .filter-select {
+        width: 100%;
+    }
+    
+    .pos-filters {
+        gap: 8px;
+    }
+    
+    .pos-btn {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+    
+    .header {
+        padding: 15px 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+} 

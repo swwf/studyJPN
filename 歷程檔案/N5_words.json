@@ -1,0 +1,124 @@
+{
+  "n5_words": [
+    {
+      "id": 1,
+      "japanese_number": "いち",
+      "romaji_number": "ichi",
+      "word": {
+        "hiragana_katakana": "くるま",
+        "romaji": "kuruma",
+        "kanji": "車",
+        "chinese_translation": "汽車",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example_sentence": {
+        "japanese": "<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>します。",
+        "romaji": "kuruma o unten shimasu.",
+        "chinese": "駕駛汽車。"
+      },
+      "memory_aid": "相關詞：<ruby>電車<rt>でんしゃ</rt></ruby> (densha - 火車/電車)、<ruby>自転車<rt>じてんしゃ</rt></ruby> (jitensha - 腳踏車)<br/>常用搭配：<ruby>車<rt>くるま</rt></ruby>に<ruby>乗<rt>の</rt></ruby>る (kuruma ni noru - 搭車)",
+      "n4_common_phrase": {
+        "japanese": "<ruby>車<rt>くるま</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きです。",
+        "romaji": "kuruma ga daisuki desu.",
+        "chinese": "我很喜歡車子。"
+      }
+    },
+    {
+      "id": 2,
+      "japanese_number": "に",
+      "romaji_number": "ni",
+      "word": {
+        "hiragana_katakana": "<ruby>新<rt>あたら</rt></ruby>しい",
+        "romaji": "atarashi",
+        "kanji": "新",
+        "chinese_translation": "新的",
+        "part_of_speech": "形容詞",
+        "level": "N5"
+      },
+      "example_sentence": {
+        "japanese": "<ruby>新しい<rt>あたらしい</rt></ruby><ruby>本<rt>ほん</rt></ruby>を<ruby>読み<rt>よ</rt></ruby>ます。",
+        "romaji": "atarashii hon o yomimasu.",
+        "chinese": "閱讀新書。"
+      },
+      "memory_aid": "反義詞：<ruby>古<rt>ふる</rt></ruby>い (furui - 舊的)<br/>常用搭配：<ruby>新しい<rt>あたらしい</rt></ruby><ruby>服<rt>ふく</rt></ruby> (atarashii fuku - 新衣服)、<ruby>新しい<rt>あたらしい</rt></ruby><ruby>生活<rt>せいかつ</rt></ruby> (atarashii seikatsu - 新生活)",
+      "n4_common_phrase": {
+        "japanese": "<ruby>新しい<rt>あたらしい</rt></ruby>ことを<ruby>始<rt>はじ</rt></ruby>める。",
+        "romaji": "atarashii koto o hajimeru.",
+        "chinese": "開始新的事情。"
+      }
+    },
+    {
+      "id": 3,
+      "japanese_number": "さん",
+      "romaji_number": "san",
+      "word": {
+        "hiragana_katakana": "<ruby>会<rt>あ</rt></ruby>う",
+        "romaji": "au",
+        "kanji": "会う",
+        "chinese_translation": "見面",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example_sentence": {
+        "japanese": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。",
+        "romaji": "tomodachi ni aimasu.",
+        "chinese": "和朋友見面。"
+      },
+      "memory_aid": "相關詞：<ruby>出会う<rt>であう</rt></ruby> (deau - 相遇)<br/>常用搭配：<ruby>人<rt>ひと</rt></ruby>に<ruby>会<rt>あ</rt></ruby>う (hito ni au - 和人見面)<br/>動詞變化：「あう」(辭書形) → 「会います」(ます形/禮貌形)",
+      "n4_common_phrase": {
+        "japanese": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。",
+        "romaji": "sensei ni aimasu.",
+        "chinese": "和老師見面。"
+      }
+    },
+    {
+      "id": 4,
+      "japanese_number": "よん",
+      "romaji_number": "yon",
+      "word": {
+        "hiragana_katakana": "<ruby>言<rt>い</rt></ruby>う",
+        "romaji": "iu",
+        "kanji": "言う",
+        "chinese_translation": "說",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example_sentence": {
+        "japanese": "<ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>いますか。",
+        "romaji": "nani o iimasu ka.",
+        "chinese": "說什麼？"
+      },
+      "memory_aid": "常用搭配：`「はい」と<ruby>言<rt>い</rt></ruby>う (\"hai\" to iu - 說「是」)`<br/>動詞變化：「いう」(辭書形) → 「言います」(いいます - iimasu - ます形/禮貌形)",
+      "n4_common_phrase": {
+        "japanese": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>に<ruby>言<rt>い</rt></ruby>えます。",
+        "romaji": "kare wa nihongo ga jouzu ni iemasu.",
+        "chinese": "他日語說得很好。"
+      }
+    },
+    {
+      "id": 5,
+      "japanese_number": "ご",
+      "romaji_number": "go",
+      "word": {
+        "hiragana_katakana": "<ruby>家<rt>いえ</rt></ruby>",
+        "romaji": "ie",
+        "kanji": "家",
+        "chinese_translation": "家",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example_sentence": {
+        "japanese": "<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>は<ruby>近<rt>ちか</rt></ruby>いです。",
+        "romaji": "watashi no ie wa chikai desu.",
+        "chinese": "我家很近。"
+      },
+      "memory_aid": "相關詞：<ruby>家族<rt>かぞく</rt></ruby> (kazoku - 家庭)<br/>常用搭配：<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>る (ie ni kaeru - 回家)",
+      "n4_common_phrase": {
+        "japanese": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ってから<ruby>宿題<rt>しゅくだい</rt></ruby>をします。",
+        "romaji": "ie ni kaette kara shukudai o shimasu.",
+        "chinese": "回家後寫作業。"
+      }
+    }
+  ]
+} 

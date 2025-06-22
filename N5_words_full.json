@@ -1,0 +1,704 @@
+{
+  "metadata": {
+    "title": "日語N5單字學習資料",
+    "description": "包含42個N5級別的日語單字，附有平假名、漢字、羅馬字、中文翻譯、例句及記憶輔助",
+    "level": "N5",
+    "total_words": 42,
+    "created_date": "2024"
+  },
+  "words": [
+    {"id": 1, "number": {"japanese": "いち", "romaji": "ichi"}, "word": {"hiragana": "くるま", "romaji": "kuruma", "kanji": "車", "meaning": "汽車", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "車を運転します。", "romaji": "kuruma o unten shimasu.", "chinese": "駕駛汽車。"}, "memory_aid": "相關詞：電車 (densha - 火車/電車)、自転車 (jitensha - 腳踏車)", "advanced_phrase": {"japanese": "車が大好きです。", "romaji": "kuruma ga daisuki desu.", "chinese": "我很喜歡車子。"}},
+    {"id": 2, "number": {"japanese": "に", "romaji": "ni"}, "word": {"hiragana": "あたらしい", "romaji": "atarashi", "kanji": "新しい", "meaning": "新的", "part_of_speech": "形容詞", "level": "N5"}, "example": {"japanese": "新しい本を読みます。", "romaji": "atarashii hon o yomimasu.", "chinese": "閱讀新書。"}, "memory_aid": "反義詞：古い (furui - 舊的)", "advanced_phrase": {"japanese": "新しいことを始める。", "romaji": "atarashii koto o hajimeru.", "chinese": "開始新的事情。"}},
+    {"id": 3, "number": {"japanese": "さん", "romaji": "san"}, "word": {"hiragana": "あう", "romaji": "au", "kanji": "会う", "meaning": "見面", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "友達に会います。", "romaji": "tomodachi ni aimasu.", "chinese": "和朋友見面。"}, "memory_aid": "相關詞：出会う (deau - 相遇)", "advanced_phrase": {"japanese": "先生に会います。", "romaji": "sensei ni aimasu.", "chinese": "和老師見面。"}},
+    {"id": 4, "number": {"japanese": "よん", "romaji": "yon"}, "word": {"hiragana": "いう", "romaji": "iu", "kanji": "言う", "meaning": "說", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "何を言いますか。", "romaji": "nani o iimasu ka.", "chinese": "說什麼？"}, "memory_aid": "常用搭配：「はい」と言う", "advanced_phrase": {"japanese": "彼は日本語が上手に言えます。", "romaji": "kare wa nihongo ga jouzu ni iemasu.", "chinese": "他日語說得很好。"}},
+    {"id": 5, "number": {"japanese": "ご", "romaji": "go"}, "word": {"hiragana": "いえ", "romaji": "ie", "kanji": "家", "meaning": "家", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "私の家は近いです。", "romaji": "watashi no ie wa chikai desu.", "chinese": "我家很近。"}, "memory_aid": "相關詞：家族 (kazoku - 家庭)", "advanced_phrase": {"japanese": "家に帰ってから宿題をします。", "romaji": "ie ni kaette kara shukudai o shimasu.", "chinese": "回家後寫作業。"}},
+    {"id": 6, "number": {"japanese": "ろく", "romaji": "roku"}, "word": {"hiragana": "カップ", "romaji": "kappu", "kanji": "", "meaning": "杯子", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "このカップは私のです。", "romaji": "kono kappu wa watashi no desu.", "chinese": "這個杯子是我的。"}, "memory_aid": "相關詞：コップ (koppu - 玻璃杯)", "advanced_phrase": {"japanese": "お茶をカップに入れます。", "romaji": "ocha o kappu ni iremasu.", "chinese": "把茶倒入杯子裡。"}},
+    {"id": 7, "number": {"japanese": "なな", "romaji": "nana"}, "word": {"hiragana": "おおぜい", "romaji": "oozei", "kanji": "大勢", "meaning": "許多人", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "駅に大勢の人がいます。", "romaji": "eki ni oozei no hito ga imasu.", "chinese": "車站有很多人。"}, "memory_aid": "相關詞：多い (ooi - 多的)", "advanced_phrase": {"japanese": "パーティーに大勢の人が来ました。", "romaji": "pātī ni oozei no hito ga kimashita.", "chinese": "派對來了很多人。"}},
+    {"id": 8, "number": {"japanese": "はち", "romaji": "hachi"}, "word": {"hiragana": "おりる", "romaji": "oriru", "kanji": "降りる", "meaning": "下車", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "次の駅で降ります。", "romaji": "tsugi no eki de orimasu.", "chinese": "在下一站下車。"}, "memory_aid": "反義詞：乗る (noru - 搭乘)", "advanced_phrase": {"japanese": "バスを降りてから、まっすぐ行ってください。", "romaji": "basu o orite kara, massugu itte kudasai.", "chinese": "下公車後，請直走。"}},
+    {"id": 9, "number": {"japanese": "きゅう", "romaji": "kyuu"}, "word": {"hiragana": "かいだん", "romaji": "kaidan", "kanji": "階段", "meaning": "樓梯", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "階段を上ります。", "romaji": "kaidan o noborimasu.", "chinese": "上樓梯。"}, "memory_aid": "常用搭配：階段を上る、階段を降りる", "advanced_phrase": {"japanese": "階段の横にエレベーターがあります。", "romaji": "kaidan no yoko ni erebētā ga arimasu.", "chinese": "樓梯旁邊有電梯。"}},
+    {"id": 10, "number": {"japanese": "じゅう", "romaji": "juu"}, "word": {"hiragana": "あお", "romaji": "ao", "kanji": "青", "meaning": "藍色", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "青い空です。", "romaji": "aoi sora desu.", "chinese": "是藍色的天空。"}, "memory_aid": "相關詞：赤 (aka - 紅色)、黒 (kuro - 黑色)", "advanced_phrase": {"japanese": "私は青い色が一番好きです。", "romaji": "watashi wa aoi iro ga ichiban suki desu.", "chinese": "我最喜歡藍色。"}},
+    {"id": 11, "number": {"japanese": "じゅういち", "romaji": "juuichi"}, "word": {"hiragana": "いぬ", "romaji": "inu", "kanji": "犬", "meaning": "狗", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "いぬが走っています。", "romaji": "inu ga hashitteimasu.", "chinese": "狗在跑。"}, "memory_aid": "相關詞：猫 (neko - 貓)", "advanced_phrase": {"japanese": "いぬが好きです。", "romaji": "inu ga suki desu.", "chinese": "我喜歡狗。"}},
+    {"id": 12, "number": {"japanese": "じゅうに", "romaji": "juuni"}, "word": {"hiragana": "ねこ", "romaji": "neko", "kanji": "猫", "meaning": "貓", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "ねこが寝ています。", "romaji": "neko ga neteimasu.", "chinese": "貓在睡覺。"}, "memory_aid": "相關詞：いぬ (inu - 狗)", "advanced_phrase": {"japanese": "ねこが好きです。", "romaji": "neko ga suki desu.", "chinese": "我喜歡貓。"}},
+    {"id": 13, "number": {"japanese": "じゅうさん", "romaji": "juusan"}, "word": {"hiragana": "たべる", "romaji": "taberu", "kanji": "食べる", "meaning": "吃", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "ご飯を食べます。", "romaji": "gohan o tabemasu.", "chinese": "吃飯。"}, "memory_aid": "常用搭配：食べることが好きです", "advanced_phrase": {"japanese": "朝ご飯を食べました。", "romaji": "asagohan o tabemashita.", "chinese": "我吃了早餐。"}},
+    {"id": 14, "number": {"japanese": "じゅうよん", "romaji": "juuyon"}, "word": {"hiragana": "のむ", "romaji": "nomu", "kanji": "飲む", "meaning": "喝", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "水を飲みます。", "romaji": "mizu o nomimasu.", "chinese": "喝水。"}, "memory_aid": "常用搭配：お茶を飲む", "advanced_phrase": {"japanese": "ジュースを飲みました。", "romaji": "jūsu o nomimashita.", "chinese": "我喝了果汁。"}},
+    {"id": 15, "number": {"japanese": "じゅうご", "romaji": "juugo"}, "word": {"hiragana": "みる", "romaji": "miru", "kanji": "見る", "meaning": "看", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "映画を見ます。", "romaji": "eiga o mimasu.", "chinese": "看電影。"}, "memory_aid": "常用搭配：テレビを見る", "advanced_phrase": {"japanese": "友達と映画を見ました。", "romaji": "tomodachi to eiga o mimashita.", "chinese": "我和朋友看了電影。"}},
+    {"id": 16, "number": {"japanese": "じゅうろく", "romaji": "juuroku"}, "word": {"hiragana": "きく", "romaji": "kiku", "kanji": "聞く", "meaning": "聽", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "音楽を聞きます。", "romaji": "ongaku o kikimasu.", "chinese": "聽音樂。"}, "memory_aid": "常用搭配：ラジオを聞く", "advanced_phrase": {"japanese": "先生の話を聞きました。", "romaji": "sensei no hanashi o kikimashita.", "chinese": "我聽了老師的話。"}},
+    {"id": 17, "number": {"japanese": "じゅうなな", "romaji": "juunana"}, "word": {"hiragana": "かう", "romaji": "kau", "kanji": "買う", "meaning": "買", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "本を買います。", "romaji": "hon o kaimasu.", "chinese": "買書。"}, "memory_aid": "常用搭配：お土産を買う", "advanced_phrase": {"japanese": "新しい服を買いました。", "romaji": "atarashii fuku o kaimashita.", "chinese": "我買了新衣服。"}},
+    {"id": 18, "number": {"japanese": "じゅうはち", "romaji": "juuhachi"}, "word": {"hiragana": "かえる", "romaji": "kaeru", "kanji": "帰る", "meaning": "回", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "家に帰ります。", "romaji": "ie ni kaerimasu.", "chinese": "回家。"}, "memory_aid": "常用搭配：仕事から帰る", "advanced_phrase": {"japanese": "学校に帰りました。", "romaji": "gakkou ni kaerimashita.", "chinese": "我回到學校。"}},
+    {"id": 19, "number": {"japanese": "じゅうきゅう", "romaji": "juukyuu"}, "word": {"hiragana": "いく", "romaji": "iku", "kanji": "行く", "meaning": "去", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "学校に行きます。", "romaji": "gakkou ni ikimasu.", "chinese": "去學校。"}, "memory_aid": "常用搭配：友達と行く", "advanced_phrase": {"japanese": "明日、映画を見に行きます。", "romaji": "ashita, eiga o mi ni ikimasu.", "chinese": "明天要去看電影。"}},
+    {"id": 20, "number": {"japanese": "にじゅう", "romaji": "nijuu"}, "word": {"hiragana": "くる", "romaji": "kuru", "kanji": "来る", "meaning": "來", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "友達が来ます。", "romaji": "tomodachi ga kimasu.", "chinese": "朋友來了。"}, "memory_aid": "常用搭配：家に来る", "advanced_phrase": {"japanese": "明日、友達が来ます。", "romaji": "ashita, tomodachi ga kimasu.", "chinese": "明天朋友會來。"}},
+    {"id": 21, "number": {"japanese": "にじゅういち", "romaji": "nijuuichi"}, "word": {"hiragana": "する", "romaji": "suru", "kanji": "する", "meaning": "做", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "宿題をします。", "romaji": "shukudai o shimasu.", "chinese": "做作業。"}, "memory_aid": "常用搭配：勉強をする", "advanced_phrase": {"japanese": "毎日、宿題をします。", "romaji": "mainichi, shukudai o shimasu.", "chinese": "我每天都做作業。"}},
+    {"id": 22, "number": {"japanese": "にじゅうに", "romaji": "nijuuni"}, "word": {"hiragana": "かてい", "romaji": "katei", "kanji": "家庭", "meaning": "家庭", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "私の家庭は大きいです。", "romaji": "watashi no katei wa ookii desu.", "chinese": "我的家庭很大。"}, "memory_aid": "相關詞：家族 (kazoku - 家人)", "advanced_phrase": {"japanese": "家庭的な料理が好きです。", "romaji": "kateiteki na ryōri ga suki desu.", "chinese": "我喜歡家常菜。"}},
+    {"id": 23, "number": {"japanese": "にじゅうさん", "romaji": "nijuusan"}, "word": {"hiragana": "かぜ", "romaji": "kaze", "kanji": "風邪", "meaning": "感冒", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "風邪をひきました。", "romaji": "kaze o hikimashita.", "chinese": "我感冒了。"}, "memory_aid": "常用搭配：風邪をひく", "advanced_phrase": {"japanese": "風邪が流行っています。", "romaji": "kaze ga ryūkō shiteimasu.", "chinese": "感冒正在流行。"}},
+    {"id": 24, "number": {"japanese": "にじゅうよん", "romaji": "nijuuyon"}, "word": {"hiragana": "きょうだい", "romaji": "kyōdai", "kanji": "兄弟", "meaning": "兄弟姊妹", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "私には兄弟がいます。", "romaji": "watashi ni wa kyōdai ga imasu.", "chinese": "我有兄弟姊妹。"}, "memory_aid": "相關詞：姉妹 (shimai - 姊妹)", "advanced_phrase": {"japanese": "兄弟は仲がいいです。", "romaji": "kyōdai wa naka ga ii desu.", "chinese": "兄弟姊妹感情很好。"}},
+    {"id": 25, "number": {"japanese": "にじゅうご", "romaji": "nijuugo"}, "word": {"hiragana": "きいろ", "romaji": "kiiro", "kanji": "黄色", "meaning": "黃色", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "黄色い花が咲いています。", "romaji": "kiiroi hana ga saiteimasu.", "chinese": "黃色的花開了。"}, "memory_aid": "形容詞形式：黄色い (kiiroi)", "advanced_phrase": {"japanese": "この信号は黄色です。", "romaji": "kono shingō wa kiiro desu.", "chinese": "這個號誌是黃燈。"}},
+    {"id": 26, "number": {"japanese": "にじゅうろく", "romaji": "nijuuroku"}, "word": {"hiragana": "シャツ", "romaji": "shatsu", "kanji": "", "meaning": "襯衫", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "白いシャツを着ています。", "romaji": "shiroi shatsu o kiteimasu.", "chinese": "穿著白襯衫。"}, "memory_aid": "相關詞：Tシャツ (T-shatsu - T恤)", "advanced_phrase": {"japanese": "このシャツはいくらですか。", "romaji": "kono shatsu wa ikura desu ka.", "chinese": "這件襯衫多少錢？"}},
+    {"id": 27, "number": {"japanese": "にじゅうなな", "romaji": "nijuunana"}, "word": {"hiragana": "からだ", "romaji": "karada", "kanji": "体", "meaning": "身體", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "体の調子がいいです。", "romaji": "karada no chōshi ga ii desu.", "chinese": "身體狀況很好。"}, "memory_aid": "常用搭配：体に気をつける", "advanced_phrase": {"japanese": "運動は体にいいです。", "romaji": "undō wa karada ni ii desu.", "chinese": "運動對身體好。"}},
+    {"id": 28, "number": {"japanese": "にじゅうはち", "romaji": "nijuuhachi"}, "word": {"hiragana": "スリッパ", "romaji": "surippa", "kanji": "", "meaning": "拖鞋", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "スリッパを履いてください。", "romaji": "surippa o haite kudasai.", "chinese": "請穿拖鞋。"}, "memory_aid": "外來語，源自英文 slipper", "advanced_phrase": {"japanese": "部屋の中ではスリッパが必要です。", "romaji": "heya no naka dewa surippa ga hitsuyō desu.", "chinese": "在房間裡需要穿拖鞋。"}},
+    {"id": 29, "number": {"japanese": "にじゅうきゅう", "romaji": "nijuukyuu"}, "word": {"hiragana": "きく", "romaji": "kiku", "kanji": "聞く", "meaning": "詢問", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "先生に聞いてください。", "romaji": "sensei ni kiite kudasai.", "chinese": "請詢問老師。"}, "memory_aid": "另一意思為「聽」", "advanced_phrase": {"japanese": "道を聞かれました。", "romaji": "michi o kikaremashita.", "chinese": "我被問路了。"}},
+    {"id": 30, "number": {"japanese": "さんじゅう", "romaji": "sanjuu"}, "word": {"hiragana": "そば", "romaji": "soba", "kanji": "そば", "meaning": "旁邊", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "机のそばに椅子があります。", "romaji": "tsukue no soba ni isu ga arimasu.", "chinese": "桌子旁邊有椅子。"}, "memory_aid": "注意與蕎麦(soba - 蕎麥麵)同音", "advanced_phrase": {"japanese": "私のそばにいてください。", "romaji": "watashi no soba ni ite kudasai.", "chinese": "請待在我身邊。"}},
+    {"id": 31, "number": {"japanese": "さんじゅういち", "romaji": "sanjuuichi"}, "word": {"hiragana": "かかる", "romaji": "kakaru", "kanji": "掛かる", "meaning": "花費(時間/金錢)", "part_of_speech": "動詞", "level": "N5"}, "example": {"japanese": "ここから駅まで30分かかります。", "romaji": "koko kara eki made sanjippun kakarimasu.", "chinese": "從這裡到車站要花30分鐘。"}, "memory_aid": "常用搭配：時間がかかる、お金がかかる", "advanced_phrase": {"japanese": "この修理にはいくらかかりますか。", "romaji": "kono shūri ni wa ikura kakarimasu ka.", "chinese": "這個修理要花多少錢？"}},
+    {"id": 32, "number": {"japanese": "さんじゅうに", "romaji": "sanjuuni"}, "word": {"hiragana": "くだもの", "romaji": "kudamono", "kanji": "果物", "meaning": "水果", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "果物を食べます。", "romaji": "kudamono o tabemasu.", "chinese": "吃水果。"}, "memory_aid": "相關詞：野菜 (yasai - 蔬菜)", "advanced_phrase": {"japanese": "好きな果物はなんですか。", "romaji": "suki na kudamono wa nan desu ka.", "chinese": "你喜歡什麼水果？"}},
+    {"id": 33, "number": {"japanese": "さんじゅうさん", "romaji": "sanjuusan"}, "word": {"hiragana": "ちょうど", "romaji": "chōdo", "kanji": "丁度", "meaning": "剛好、正好", "part_of_speech": "副詞", "level": "N5"}, "example": {"japanese": "ちょうど今、終わりました。", "romaji": "chōdo ima, owarimashita.", "chinese": "剛好現在結束了。"}, "memory_aid": "常用搭配：ちょうどいい", "advanced_phrase": {"japanese": "サイズはちょうどいいです。", "romaji": "saizu wa chōdo ii desu.", "chinese": "尺寸剛剛好。"}},
+    {"id": 34, "number": {"japanese": "さんじゅうよん", "romaji": "sanjuuyon"}, "word": {"hiragana": "すこし", "romaji": "sukoshi", "kanji": "少し", "meaning": "少許、一點", "part_of_speech": "副詞", "level": "N5"}, "example": {"japanese": "塩を少し入れてください。", "romaji": "shio o sukoshi irete kudasai.", "chinese": "請加一點鹽。"}, "memory_aid": "類義詞：ちょっと (chotto - 稍微)", "advanced_phrase": {"japanese": "日本語が少し話せます。", "romaji": "nihongo ga sukoshi hanasemasu.", "chinese": "我會說一點日文。"}},
+    {"id": 35, "number": {"japanese": "さんじゅうご", "romaji": "sanjuugo"}, "word": {"hiragana": "がくせい", "romaji": "gakusei", "kanji": "学生", "meaning": "學生", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "私は学生です。", "romaji": "watashi wa gakusei desu.", "chinese": "我是學生。"}, "memory_aid": "相關詞：先生 (sensei - 老師)、学校 (gakkō - 學校)", "advanced_phrase": {"japanese": "あの人はどこの学生ですか。", "romaji": "ano hito wa doko no gakusei desu ka.", "chinese": "那個人是哪裡的學生？"}},
+    {"id": 36, "number": {"japanese": "さんじゅうろく", "romaji": "sanjuuroku"}, "word": {"hiragana": "きょう", "romaji": "kyō", "kanji": "今日", "meaning": "今天", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "今日は天気がいいです。", "romaji": "kyō wa tenki ga ii desu.", "chinese": "今天天氣很好。"}, "memory_aid": "相關詞：昨日 (kinō - 昨天)、明日 (ashita - 明天)", "advanced_phrase": {"japanese": "今日の予定はなんですか。", "romaji": "kyō no yotei wa nan desu ka.", "chinese": "今天的計畫是什麼？"}},
+    {"id": 37, "number": {"japanese": "さんじゅうなな", "romaji": "sanjuunana"}, "word": {"hiragana": "しつもん", "romaji": "shitsumon", "kanji": "質問", "meaning": "問題", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "質問があります。", "romaji": "shitsumon ga arimasu.", "chinese": "我有問題。"}, "memory_aid": "動詞用法：質問する", "advanced_phrase": {"japanese": "質問があれば、聞いてください。", "romaji": "shitsumon ga areba, kiite kudasai.", "chinese": "如果有問題請發問。"}},
+    {"id": 38, "number": {"japanese": "さんじゅうはち", "romaji": "sanjuuhachi"}, "word": {"hiragana": "でんわ", "romaji": "denwa", "kanji": "電話", "meaning": "電話", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "友達に電話をします。", "romaji": "tomodachi ni denwa o shimasu.", "chinese": "打電話給朋友。"}, "memory_aid": "常用搭配：電話をかける", "advanced_phrase": {"japanese": "後で電話してもいいですか。", "romaji": "ato de denwa shite mo ii desu ka.", "chinese": "我等一下可以打電話給你嗎？"}},
+    {"id": 39, "number": {"japanese": "さんじゅうきゅう", "romaji": "sanjuukyuu"}, "word": {"hiragana": "スマホ", "romaji": "sumaho", "kanji": "", "meaning": "智慧型手機", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "これは私のスマホです。", "romaji": "kore wa watashi no sumaho desu.", "chinese": "這是我的智慧型手機。"}, "memory_aid": "スマートフォン (sumātofon) 的縮寫", "advanced_phrase": {"japanese": "電車でスマホを見る人が多いです。", "romaji": "densha de sumaho o miru hito ga ooi desu.", "chinese": "在電車上看手機的人很多。"}},
+    {"id": 40, "number": {"japanese": "よんじゅう", "romaji": "yonjuu"}, "word": {"hiragana": "セーター", "romaji": "sētā", "kanji": "", "meaning": "毛衣", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "赤いセーターを買いました。", "romaji": "akai sētā o kaimashita.", "chinese": "我買了一件紅色的毛衣。"}, "memory_aid": "外來語，源自英文 sweater", "advanced_phrase": {"japanese": "このセーターは暖かいです。", "romaji": "kono sētā wa atatakai desu.", "chinese": "這件毛衣很溫暖。"}},
+    {"id": 41, "number": {"japanese": "よんじゅういち", "romaji": "yonjuuichi"}, "word": {"hiragana": "きっさてん", "romaji": "kissaten", "kanji": "喫茶店", "meaning": "咖啡店", "part_of_speech": "名詞", "level": "N5"}, "example": {"japanese": "喫茶店でコーヒーを飲みます。", "romaji": "kissaten de kōhī o nomimasu.", "chinese": "在咖啡店喝咖啡。"}, "memory_aid": "相關詞：カフェ (kafe - 咖啡廳)", "advanced_phrase": {"japanese": "駅の近くにいい喫茶店があります。", "romaji": "eki no chikaku ni ii kissaten ga arimasu.", "chinese": "車站附近有一家不錯的咖啡店。"}},
+    {"id": 42, "number": {"japanese": "よんじゅうに", "romaji": "yonjuuni"}, "word": {"hiragana": "あおい", "romaji": "aoi", "kanji": "青い", "meaning": "藍色的", "part_of_speech": "形容詞", "level": "N5"}, "example": {"japanese": "青い空が好きです。", "romaji": "aoi sora ga suki desu.", "chinese": "我喜歡藍色的天空。"}, "memory_aid": "名詞形式：青 (ao - 藍色)", "advanced_phrase": {"japanese": "彼女の目は青いです。", "romaji": "kanojo no me wa aoi desu.", "chinese": "她的眼睛是藍色的。"}},
+    {
+      "id": 43,
+      "number": {
+        "japanese": "よんじゅうさん",
+        "romaji": "yonjuusan"
+      },
+      "word": {
+        "hiragana": "あく",
+        "romaji": "aku",
+        "kanji": "開く",
+        "meaning": "打開、開門",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ドアを開けます。",
+        "romaji": "doa o akemasu.",
+        "chinese": "打開門。"
+      },
+      "memory_aid": "自動詞，表示某物「開了、打開了」。與「閉まる (shimaru - (門窗)關閉)」相對。想像門因為「啊～酷～（aku）」的一聲被打開了。也常見於「店が開く (mise ga aku - 店開了)」。",
+      "advanced_phrase": {
+        "japanese": "窓が開く。",
+        "romaji": "mado ga aku.",
+        "chinese": "窗戶開了。"
+      }
+    },
+    {
+      "id": 44,
+      "number": {
+        "japanese": "よんじゅうよん",
+        "romaji": "yonjuuyon"
+      },
+      "word": {
+        "hiragana": "しまる",
+        "romaji": "shimaru",
+        "kanji": "閉まる",
+        "meaning": "關閉、合上",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "窓が閉まります。",
+        "romaji": "mado ga shimarimasu.",
+        "chinese": "窗戶關上了。"
+      },
+      "memory_aid": "自動詞，表示門、窗等自己「關上了」。聯想：門「死馬路（shimaru）」了，所以關閉了。和「開く (aku - 打開)」是相對的詞，很好一起記住。",
+      "advanced_phrase": {
+        "japanese": "店が閉まる。",
+        "romaji": "mise ga shimaru.",
+        "chinese": "店鋪關門了。"
+      }
+    },
+    {
+      "id": 45,
+      "number": {
+        "japanese": "よんじゅうご",
+        "romaji": "yonjuugo"
+      },
+      "word": {
+        "hiragana": "あそぶ",
+        "romaji": "asobu",
+        "kanji": "遊ぶ",
+        "meaning": "玩耍、玩樂、遊玩",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "友達と公園で遊びます。",
+        "romaji": "tomodachi to kouen de asobimasu.",
+        "chinese": "和朋友在公園玩耍。"
+      },
+      "memory_aid": "第一類動詞（五段動詞）。「遊 (あそ) ぶ」的發音聽起來像「阿搜布」，可以聯想成「阿嬤在草埔（台語發音的『草地』）上玩耍」。這個字用途很廣，從小朋友玩玩具到大人出遊都可以用。比如：「子供が遊ぶ」(小孩玩耍)、「旅行に遊ぶ」(去旅行、遊玩)。",
+      "advanced_phrase": {
+        "japanese": "一緒に遊ぼう！",
+        "romaji": "issho ni asobou!",
+        "chinese": "一起玩吧！"
+      }
+    },
+    {
+      "id": 46,
+      "number": {
+        "japanese": "よんじゅうろく",
+        "romaji": "yonjuuroku"
+      },
+      "word": {
+        "hiragana": "こうえん",
+        "romaji": "kouen",
+        "kanji": "公園",
+        "meaning": "公園",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "公園で散歩します。",
+        "romaji": "kouen de sanpo shimasu.",
+        "chinese": "在公園散步。"
+      },
+      "memory_aid": "發音像中文的「公園」直接音譯過來，非常好記。在台灣，公園是大家常去運動或休息的地方，所以可以想像「在公園（kouen）裡散步很舒服」。常和助詞「で」一起用，表示在公園做某事。",
+      "advanced_phrase": {
+        "japanese": "公園に行こう！",
+        "romaji": "kouen ni ikou!",
+        "chinese": "去公園吧！"
+      }
+    },
+    {
+      "id": 47,
+      "number": {
+        "japanese": "よんじゅうなな",
+        "romaji": "yonjuunana"
+      },
+      "word": {
+        "hiragana": "あらう",
+        "romaji": "arau",
+        "kanji": "洗う",
+        "meaning": "洗（東西）、清洗",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "手を洗います。",
+        "romaji": "te o araimasu.",
+        "chinese": "洗手。"
+      },
+      "memory_aid": "這是個很常用的動詞，可以洗手、洗臉、洗碗、洗衣服。想像一下你在洗碗，嘴巴裡發出「啊～撈～（arau）」的聲音，是不是很像在洗東西呢？常用來搭配「を」助詞，表示清洗的對象。例如：「皿を洗う」(洗盤子)。",
+      "advanced_phrase": {
+        "japanese": "果物を洗おう。",
+        "romaji": "kudamono o araou.",
+        "chinese": "洗水果吧。"
+      }
+    },
+    {
+      "id": 48,
+      "number": {
+        "japanese": "よんじゅうはち",
+        "romaji": "yonjuuhachi"
+      },
+      "word": {
+        "hiragana": "かお",
+        "romaji": "kao",
+        "kanji": "顔",
+        "meaning": "臉、面孔",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "顔を洗います。",
+        "romaji": "kao o araimasu.",
+        "chinese": "洗臉。"
+      },
+      "memory_aid": "發音「kao」很像台語的「膏」（ㄍㄠ），可以想像臉上塗了面霜或藥膏。這是身體部位的基本單字，非常好記。常用來搭配動詞「洗う (arau - 洗)」形成「洗臉」的說法。",
+      "advanced_phrase": {
+        "japanese": "可愛い顔。",
+        "romaji": "kawaii kao.",
+        "chinese": "可愛的臉。"
+      }
+    },
+    {
+      "id": 49,
+      "number": {
+        "japanese": "よんじゅうきゅう",
+        "romaji": "yonjuukyuu"
+      },
+      "word": {
+        "hiragana": "ある",
+        "romaji": "aru",
+        "kanji": "ある",
+        "meaning": "有、存在",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ここにペンがあります。",
+        "romaji": "koko ni pen ga arimasu.",
+        "chinese": "這裡有筆。"
+      },
+      "memory_aid": "自動詞。表示**非生物**或**植物**的「有」或「存在」。想想看，當你找到東西時，會說「啊～嚕～（aru）！找到了！」；這和「いる (iru - 有、存在，用於生物)」是相對的，要特別注意區分喔！常用的句型是「場所 に 物 が ある」(在某個地方有某物)。",
+      "advanced_phrase": {
+        "japanese": "椅子がある。",
+        "romaji": "isu ga aru.",
+        "chinese": "有椅子。"
+      }
+    },
+    {
+      "id": 50,
+      "number": {
+        "japanese": "ごじゅう",
+        "romaji": "gojuu"
+      },
+      "word": {
+        "hiragana": "へや",
+        "romaji": "heya",
+        "kanji": "部屋",
+        "meaning": "房間",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "自分の部屋があります。",
+        "romaji": "jibun no heya ga arimasu.",
+        "chinese": "我有自己的房間。"
+      },
+      "memory_aid": "發音「heya」聽起來很像台語「鞋啊」（ê-a），想像一進到房間就看到一雙鞋子「鞋啊」在那裡。這是指家裡或建築物裡的「房間」這個空間。常用句型如「部屋を掃除する」(打掃房間)。",
+      "advanced_phrase": {
+        "japanese": "私の部屋。",
+        "romaji": "watashi no heya.",
+        "chinese": "我的房間。"
+      }
+    },
+    {
+      "id": 51,
+      "number": {
+        "japanese": "ごじゅういち",
+        "romaji": "gojuuichi"
+      },
+      "word": {
+        "hiragana": "テレビ",
+        "romaji": "terebi",
+        "kanji": "",
+        "meaning": "電視",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "テレビを見ます。",
+        "romaji": "terebi o mimasu.",
+        "chinese": "看電視。"
+      },
+      "memory_aid": "這是個外來語，直接從英文的「television」簡化而來，發音非常接近，很好記。想像你在客廳「特樂比 (terebi)」地看著電視，這個音很自然地就聯想到電視了。常搭配動詞「見る (miru - 看)」。",
+      "advanced_phrase": {
+        "japanese": "テレビを消す。",
+        "romaji": "terebi o kesu.",
+        "chinese": "關掉電視。"
+      }
+    },
+    {
+      "id": 52,
+      "number": {
+        "japanese": "ごじゅうに",
+        "romaji": "gojuuni"
+      },
+      "word": {
+        "hiragana": "あるく",
+        "romaji": "aruku",
+        "kanji": "歩く",
+        "meaning": "走路、步行",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "毎日、公園を歩きます。",
+        "romaji": "mainichi, kouen o arukimasu.",
+        "chinese": "每天在公園散步。"
+      },
+      "memory_aid": "這是個很基礎的動詞。想像你「啊～嚕～哭～（aruku）」著走在路上，因為走了太久腳很痠。這個動詞主要表示用腳移動的動作。常用來搭配表示地點的助詞「を」或「で」，例如：「道を歩く」(走在路上)。",
+      "advanced_phrase": {
+        "japanese": "一緒に歩こう！",
+        "romaji": "issho ni arukou!",
+        "chinese": "一起走路吧！"
+      }
+    },
+    {
+      "id": 53,
+      "number": {
+        "japanese": "ごじゅうさん",
+        "romaji": "gojuusan"
+      },
+      "word": {
+        "hiragana": "がっこう",
+        "romaji": "gakkou",
+        "kanji": "學校",
+        "meaning": "學校",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "學校に行きます。",
+        "romaji": "gakkou ni ikimasu.",
+        "chinese": "去學校。"
+      },
+      "memory_aid": "發音「gakkou」很像中文的「學校」兩個字的發音加速唸，特別是「がっ」這個部分是促音，聽起來像輕輕頓一下。在台灣，學生每天都要去學校，這是個非常日常的場所。常用助詞「に」搭配動詞「行く (iku - 去)」，表示去學校。",
+      "advanced_phrase": {
+        "japanese": "學校は楽しい。",
+        "romaji": "gakkou wa tanoshii.",
+        "chinese": "學校很有趣。"
+      }
+    },
+    {
+      "id": 54,
+      "number": {
+        "japanese": "ごじゅうよん",
+        "romaji": "gojuuyon"
+      },
+      "word": {
+        "hiragana": "あるいて",
+        "romaji": "aruite",
+        "kanji": "歩いて",
+        "meaning": "走著、步行地",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "學校まで歩いて行きます。",
+        "romaji": "gakkou made aruite ikimasu.",
+        "chinese": "走到學校去。"
+      },
+      "memory_aid": "這是動詞「歩く (aruku - 走路)」的て形。て形在日語裡非常重要，可以連接多個動作，像「走著做什麼」或「用走的方式」。想想看，在台灣很多人都喜歡「走路 (aruku)」去逛夜市，就可以說「夜市まで歩いて行きます (yao shi made aruite ikimasu - 走到夜市去)」。這個『て』字就像把動作連起來的小橋。",
+      "advanced_phrase": {
+        "japanese": "家まで歩いて帰る。",
+        "romaji": "ie made aruite kaeru.",
+        "chinese": "走回家。"
+      }
+    },
+    {
+      "id": 55,
+      "number": {
+        "japanese": "ごじゅうご",
+        "romaji": "gojuugo"
+      },
+      "word": {
+        "hiragana": "いる",
+        "romaji": "iru",
+        "kanji": "いる",
+        "meaning": "有、存在（用於生物）；在、活著",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "部屋に貓がいます。",
+        "romaji": "heya ni neko ga imasu.",
+        "chinese": "房間裡有貓。"
+      },
+      "memory_aid": "自動詞。表示**生物**（人、動物）的「有」或「存在」。想想看，當你說「欸！有人在（iru）嗎？」這個『iru』的發音就像在叫人一樣。它和「ある (aru - 有、存在，用於非生物/植物)」是成對的，這是日語初學者一定要搞清楚的重點喔！常用的句型是「場所 に 生物 が いる」(在某個地方有某生物)。",
+      "advanced_phrase": {
+        "japanese": "人がいる。",
+        "romaji": "hito ga iru.",
+        "chinese": "有人在。"
+      }
+    },
+    {
+      "id": 56,
+      "number": {
+        "japanese": "ごじゅうろく",
+        "romaji": "gojuuroku"
+      },
+      "word": {
+        "hiragana": "おかね",
+        "romaji": "okane",
+        "kanji": "お金",
+        "meaning": "錢、金錢",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "お金があります。",
+        "romaji": "okane ga arimasu.",
+        "chinese": "有錢。"
+      },
+      "memory_aid": "「okane」發音聽起來像「喔咖內」，想像錢包「喔！」的一聲打開，裡面有好多「摳摳（台語：錢）內」。這是日常生活中非常重要的詞彙，去便利商店、夜市買東西都會用到。前面的「お (o)」是美化語，讓聽起來更禮貌、自然。常用來搭配動詞「使う (tsukau - 使用)」或「払う (harau - 支付)」。",
+      "advanced_phrase": {
+        "japanese": "お金が欲しい。",
+        "romaji": "okane ga hoshii.",
+        "chinese": "想要錢。"
+      }
+    },
+    {
+      "id": 57,
+      "number": {
+        "japanese": "ごじゅうなな",
+        "romaji": "gojuunana"
+      },
+      "word": {
+        "hiragana": "うたう",
+        "romaji": "utau",
+        "kanji": "歌う",
+        "meaning": "唱歌",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "歌を歌います。",
+        "romaji": "uta o utaimasu.",
+        "chinese": "唱歌。"
+      },
+      "memory_aid": "這是個非常基礎且快樂的動詞。發音「utau」聽起來像「屋塔屋」，想像在一個小小的屋子裡（屋塔屋），大家開心的大聲唱歌。台灣人很喜歡去 KTV 唱歌，這個詞語情境很貼近。通常會和名詞「歌 (uta - 歌、歌曲)」一起使用，形成「歌を歌う (uta o utau - 唱歌)」。",
+      "advanced_phrase": {
+        "japanese": "歌を歌おう！",
+        "romaji": "uta o utaou!",
+        "chinese": "來唱歌吧！"
+      }
+    },
+    {
+      "id": 58,
+      "number": {
+        "japanese": "ごじゅうはち",
+        "romaji": "gojuuhachi"
+      },
+      "word": {
+        "hiragana": "えいご",
+        "romaji": "eigo",
+        "kanji": "英語",
+        "meaning": "英語、英文",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "英語を勉強します。",
+        "romaji": "eigo o benkyou shimasu.",
+        "chinese": "學英文。"
+      },
+      "memory_aid": "發音「eigo」可以聯想到「英文」的「英」字發音類似「ei」，加上「go」像「語」。在台灣，大家從小學開始就會學英文，所以這個詞很常用也很熟悉。常見的搭配是「英語を話す」(說英文) 或「英語を勉強する」(學英文)。",
+      "advanced_phrase": {
+        "japanese": "英語が好き。",
+        "romaji": "eigo ga suki.",
+        "chinese": "喜歡英文。"
+      }
+    },
+    {
+      "id": 59,
+      "number": {
+        "japanese": "ごじゅうきゅう",
+        "romaji": "gojuukyuu"
+      },
+      "word": {
+        "hiragana": "うた",
+        "romaji": "uta",
+        "kanji": "歌",
+        "meaning": "歌、歌曲",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "この歌が好きです。",
+        "romaji": "kono uta ga suki desu.",
+        "chinese": "我喜歡這首歌。"
+      },
+      "memory_aid": "「歌」的發音「uta」和動詞「歌う (utau - 唱歌)」非常像，它們是名詞和動詞的關係，可以一起記！在台灣，流行音樂和卡拉OK很受歡迎，所以「歌」這個詞非常實用。想像當你聽到一首好聽的歌時，會說「喔！打（uta）動我的心！」。常和助詞「を」搭配動詞「歌う (utau)」，形成「歌を歌う (唱歌)」。",
+      "advanced_phrase": {
+        "japanese": "歌を聞く。",
+        "romaji": "uta o kiku.",
+        "chinese": "聽歌。"
+      }
+    },
+    {
+      "id": 60,
+      "number": {
+        "japanese": "ろくじゅう",
+        "romaji": "rokujuu"
+      },
+      "word": {
+        "hiragana": "きっぷ",
+        "romaji": "kippu",
+        "kanji": "切符",
+        "meaning": "票、入場券",
+        "part_of_speech": "名詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "切符を買います。",
+        "romaji": "kippu o kaimasu.",
+        "chinese": "買票。"
+      },
+      "memory_aid": "「kippu」是個促音詞，發音時「きっ」有個短暫的停頓，像是「掐普」的感覺。想像你急著買票時，會說「快普 (kippu) 快普 (kippu)！我要買票！」。在台灣，我們買火車票、電影票、演唱會票都會用到「票」，所以這個詞很實用。常搭配動詞「買う (kau - 買)」或「見せる (miseru - 出示)」。",
+      "advanced_phrase": {
+        "japanese": "切符がある。",
+        "romaji": "kippu ga aru.",
+        "chinese": "有票。"
+      }
+    },
+    {
+      "id": 61,
+      "number": {
+        "japanese": "ろくじゅういち",
+        "romaji": "rokujuuichi"
+      },
+      "word": {
+        "hiragana": "にまい",
+        "romaji": "nimai",
+        "kanji": "二枚",
+        "meaning": "兩張、兩件（薄而平的物品）",
+        "part_of_speech": "數詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "切符を二枚買います。",
+        "romaji": "kippu o nimai kaimasu.",
+        "chinese": "買兩張票。"
+      },
+      "memory_aid": "「nimai」是由數字「二 (ni - 2)」和量詞「枚 (mai - 張/件)」組成的。想像你在台灣買兩張電影票，會說「兩張 (nimai)」，『mai』的發音像台語的『買』，意思就是買兩張！這個量詞專門用來數薄而平的東西，例如：**紙張 (かみ)、襯衫 (シャツ)、盤子 (さら)、照片 (しゃしん)** 等。",
+      "advanced_phrase": {
+        "japanese": "紙が二枚。",
+        "romaji": "kami ga nimai.",
+        "chinese": "有兩張紙。"
+      }
+    },
+    {
+      "id": 62,
+      "number": {
+        "japanese": "ろくじゅうに",
+        "romaji": "rokujuuni"
+      },
+      "word": {
+        "hiragana": "うる",
+        "romaji": "uru",
+        "kanji": "売る",
+        "meaning": "賣、銷售",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "店でパンを売ります。",
+        "romaji": "mise de pan o urimasu.",
+        "chinese": "在店裡賣麵包。"
+      },
+      "memory_aid": "這是個和「買う (kau - 買)」相對的動詞，可以一起記住。想像你把東西「烏魯（uru）」烏魯地（台語：亂七八糟地）賣掉。在台灣，很多小販會在市場「賣 (uru)」東西，這是很常見的商業行為。常用來搭配物品名詞和助詞「を」，表示賣什麼東西。",
+      "advanced_phrase": {
+        "japanese": "本を売る。",
+        "romaji": "hon o uru.",
+        "chinese": "賣書。"
+      }
+    },
+    {
+      "id": 63,
+      "number": {
+        "japanese": "ろくじゅうさん",
+        "romaji": "rokujuusan"
+      },
+      "word": {
+        "hiragana": "ひとつ",
+        "romaji": "hitotsu",
+        "kanji": "一つ",
+        "meaning": "一個",
+        "part_of_speech": "數詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "リンゴを一つください。",
+        "romaji": "ringo o hitotsu kudasai.",
+        "chinese": "請給我一個蘋果。"
+      },
+      "memory_aid": "「hitotsu」是日語中數數最基本的詞之一，表示「一個」。發音『hi-to-tsu』很像你看到一個可愛的小東西時，會說「hee！偷吃！」（Hitotsu）。這種數法（例如：一つ、二つ、三つ...）通常用於沒有專屬量詞的物品，或是當你只想表達『一個』的籠統概念時。想像在台灣夜市買一份小吃，就可以說『一個（hitotsu）就好』。",
+      "advanced_phrase": {
+        "japanese": "席が一つ。",
+        "romaji": "seki ga hitotsu.",
+        "chinese": "有一個座位。"
+      }
+    },
+    {
+      "id": 64,
+      "number": {
+        "japanese": "ろくじゅうよん",
+        "romaji": "rokujuuyon"
+      },
+      "word": {
+        "hiragana": "おく",
+        "romaji": "oku",
+        "kanji": "置く",
+        "meaning": "放置、擺放",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "本を機の上に置きます。",
+        "romaji": "hon o tsukue no ue ni okimasu.",
+        "chinese": "把書放在桌子上。"
+      },
+      "memory_aid": "這是個表示動作的動詞。發音「oku」聽起來像「喔酷」，想像你把東西輕輕「喔！酷！」地放在桌上。在台灣，我們常常把東西放在某個地方，這個詞彙非常實用。常用句型是「名詞 を 場所 に 置く」，表示把某物放在某處。",
+      "advanced_phrase": {
+        "japanese": "ここに置く。",
+        "romaji": "koko ni oku.",
+        "chinese": "放在這裡。"
+      }
+    },
+    {
+      "id": 65,
+      "number": {
+        "japanese": "ろくじゅうご",
+        "romaji": "rokujuugo"
+      },
+      "word": {
+        "hiragana": "おくる",
+        "romaji": "okuru",
+        "kanji": "送る",
+        "meaning": "送、寄送、送行",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "友達を駅まで送ります。",
+        "romaji": "tomodachi o eki made okurimasu.",
+        "chinese": "送朋友去車站。"
+      },
+      "memory_aid": "這個動詞的發音「okuru」聽起來像「喔酷路」，想像你要把東西「喔！酷！路遙知馬力」地寄送出去。這個詞用途很廣，可以指送人（送行）、送禮物、寄信或包裹。在台灣，我們常常會送家人朋友去車站或機場，或是寄送包裹，是很生活化的詞彙。常用句型是「人 を 場所 まで 送る」(送某人到某地) 或 「物 を 送る」(寄送物品)。",
+      "advanced_phrase": {
+        "japanese": "手紙を送る。",
+        "romaji": "tegami o okuru.",
+        "chinese": "寄信。"
+      }
+    },
+    {
+      "id": 66,
+      "number": {
+        "japanese": "ろくじゅうろく",
+        "romaji": "rokujuuroku"
+      },
+      "word": {
+        "hiragana": "しょうひん",
+        "romaji": "shouhin",
+        "kanji": "商品",
+        "meaning": "商品、貨品",
+        "part_of_speech": "名詞",
+        "level": "N4"
+      },
+      "example": {
+        "japanese": "新しい商品を開発します。",
+        "romaji": "atarashii shouhin o kaihatsu shimasu.",
+        "chinese": "開發新商品。"
+      },
+      "memory_aid": "「shouhin」這個發音和中文的「商品」非常相似，幾乎是直接的音譯，所以非常好記！想想看，在台灣逛百貨公司或夜市，滿眼都是琳瑯滿目的『商品』。這個詞在商業或購物情境中非常常用。可以聯想到：「這個商店的『商品 (shouhin)』種類很多」。",
+      "advanced_phrase": {
+        "japanese": "良い商品。",
+        "romaji": "yoi shouhin.",
+        "chinese": "好商品。"
+      }
+    },
+    {
+      "id": 67,
+      "number": {
+        "japanese": "ろくじゅうなな",
+        "romaji": "rokujuunana"
+      },
+      "word": {
+        "hiragana": "おす",
+        "romaji": "osu",
+        "kanji": "押す",
+        "meaning": "推、按壓",
+        "part_of_speech": "動詞",
+        "level": "N5"
+      },
+      "example": {
+        "japanese": "ボタンを押します。",
+        "romaji": "botan o oshimasu.",
+        "chinese": "按按鈕。"
+      },
+      "memory_aid": "這個動詞的發音「osu」聽起來像「喔蘇」，想像你看到一個按鈕，大聲喊著「喔！舒（osu）服！」，然後就把它按下去。這個詞在日常生活中很常用，例如：按電梯按鈕、推門、按門鈴等等。在台灣，很多大樓或店家都會有『請按』或『請推』的標示，都可以聯想到這個動詞。常用句型是「名詞 を 押す」，表示按壓或推動某物。",
+      "advanced_phrase": {
+        "japanese": "ドアを押す。",
+        "romaji": "doa o osu.",
+        "chinese": "推門。"
+      }
+    }
+
+  ]
+} 

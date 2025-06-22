@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日語單字清單檢視器</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif;
+            margin: 10px;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .btn-primary { background: #007bff; color: white; }
+        .btn-secondary { background: #6c757d; color: white; }
+        
+        .stats {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .word-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            table-layout: auto;
+        }
+        
+        .word-table th:nth-child(1) { min-width: 80px; text-align: center; }   /* 編號 */
+        .word-table th:nth-child(2) { min-width: 150px; text-align: center; }  /* 單字 */
+        .word-table th:nth-child(3) { min-width: 120px; }  /* 意思 */
+        .word-table th:nth-child(4) { min-width: 80px; }   /* 詞性 */
+        .word-table th:nth-child(5) { min-width: 60px; }   /* 級別 */
+        .word-table th:nth-child(6) { min-width: 300px; }  /* 例句 */
+        .word-table th:nth-child(7) { min-width: 250px; }  /* 記憶輔助 */
+        
+        .word-table td:nth-child(1) { text-align: center; }  /* 編號欄位置中 */
+        .word-table td:nth-child(2) { text-align: center; }  /* 單字欄位置中 */
+        .word-table td:nth-child(4) { text-align: center; }  /* 品詞欄位置中 */
+        .word-table td:nth-child(5) { text-align: center; }  /* 級別欄位置中 */
+        
+        .word-table th, .word-table td {
+            border: 1px solid #dee2e6;
+            padding: 10px 15px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        
+        .word-table th {
+            background: #f8f9fa;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .word-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .pos-tag {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .pos-noun { background: #28a745; }
+        .pos-verb { background: #007bff; }
+        .pos-adjective { background: #ffc107; color: #212529; }
+        .pos-adverb { background: #6f42c1; }
+        .pos-other { background: #6c757d; }
+        
+        .level-tag {
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            background: #17a2b8;
+            color: white;
+        }
+        
+        .japanese-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .kanji-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            line-height: 1.2;
+        }
+        
+        .hiragana-reading {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .romaji-text {
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .meaning-text {
+            color: #28a745;
+            font-weight: 500;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            color: #6c757d;
+        }
+        
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .compact-view .word-table td {
+            padding: 6px 10px;
+            font-size: 14px;
+        }
+        
+        .word-table td {
+            word-wrap: break-word;
+            white-space: normal;
+        }
+        
+        .search-box {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            background: white;
+        }
+        
+        .filter-btn.active {
+            background: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        
+        .sort-header {
+            cursor: pointer;
+            user-select: none;
+        }
+        
+        .sort-header:hover {
+            background: #e9ecef;
+        }
+        
+        .sort-arrow {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 日語單字清單檢視器<br><span style="font-size: 0.7em; color: #666;">日本語単語リスト閲覧器 (nihongo tango risuto etsuran-ki)</span></h1>
+        
+        <div class="controls">
+            <button class="btn btn-primary" onclick="loadJSON()">載入 N5_words_full.json</button>
+            <button class="btn btn-secondary" onclick="loadCompleteJSON()">載入 N5_words_complete.json</button>
+            <button class="btn btn-secondary" onclick="toggleView()">切換檢視模式</button>
+            <input type="text" class="search-box" placeholder="搜尋單字..." onkeyup="filterWords(this.value)">
+            
+            <div class="filter-buttons" id="posFilters" style="display: none;">
+                <button class="filter-btn active" onclick="filterByPOS('')">全部 (subete)</button>
+                <button class="filter-btn" onclick="filterByPOS('名詞')">名詞 (meishi)</button>
+                <button class="filter-btn" onclick="filterByPOS('動詞')">動詞 (dōshi)</button>
+                <button class="filter-btn" onclick="filterByPOS('形容詞')">形容詞 (keiyōshi)</button>
+                <button class="filter-btn" onclick="filterByPOS('副詞')">副詞 (fukushi)</button>
+            </div>
+        </div>
+        
+        <div class="stats" id="stats" style="display: none;">
+            <strong>資料統計 (データ統計 - dēta tōkei)：</strong>
+            <span id="totalCount">0</span> 個單字 (tango) | 
+            <span id="posStats"></span> | 
+            <span id="levelStats"></span>
+        </div>
+        
+        <div id="content">
+            <div class="loading">點擊上方按鈕載入JSON檔案</div>
+        </div>
+    </div>
+
+    <script>
+        let allWords = [];
+        let filteredWords = [];
+        let isCompactView = false;
+        let currentPOSFilter = '';
+        let currentSort = { field: '', direction: 'asc' };
+
+        async function loadJSON() {
+            try {
+                const response = await fetch('N5_words_full.json');
+                const data = await response.json();
+                allWords = data.words || [];
+                // 預設按編號降序排列（從最大編號開始）
+                allWords.sort((a, b) => b.id - a.id);
+                filteredWords = [...allWords];
+                currentSort = { field: 'id', direction: 'desc' };
+                displayWords();
+                // 設定排序箭頭
+                setTimeout(() => {
+                    const arrow = document.getElementById('sort-id');
+                    if (arrow) arrow.textContent = '↓';
+                }, 100);
+                updateStats(data.metadata);
+                showPOSFilters();
+                console.log('成功載入 N5_words_full.json:', allWords.length, '個單字');
+            } catch (error) {
+                showError('無法載入 N5_words_full.json: ' + error.message);
+            }
+        }
+
+        async function loadCompleteJSON() {
+            try {
+                const response = await fetch('N5_words_complete.json');
+                const data = await response.json();
+                allWords = data.words || [];
+                // 預設按編號降序排列（從最大編號開始）
+                allWords.sort((a, b) => b.id - a.id);
+                filteredWords = [...allWords];
+                currentSort = { field: 'id', direction: 'desc' };
+                displayWords();
+                // 設定排序箭頭
+                setTimeout(() => {
+                    const arrow = document.getElementById('sort-id');
+                    if (arrow) arrow.textContent = '↓';
+                }, 100);
+                updateStats(data.metadata);
+                showPOSFilters();
+                console.log('成功載入 N5_words_complete.json:', allWords.length, '個單字');
+            } catch (error) {
+                showError('無法載入 N5_words_complete.json: ' + error.message);
+            }
+        }
+
+        function displayWords() {
+            const content = document.getElementById('content');
+            
+            if (filteredWords.length === 0) {
+                content.innerHTML = '<div class="loading">沒有找到符合條件的單字</div>';
+                return;
+            }
+
+            let html = `
+                <table class="word-table">
+                    <thead>
+                        <tr>
+                            <th class="sort-header" onclick="sortTable('id')">編號<br><span class="romaji-text">bangō</span><span class="sort-arrow" id="sort-id"></span></th>
+                            <th class="sort-header" onclick="sortTable('word')">単語<br><span class="romaji-text">tango</span><span class="sort-arrow" id="sort-word"></span></th>
+                            <th class="sort-header" onclick="sortTable('meaning')">意味<br><span class="romaji-text">imi</span><span class="sort-arrow" id="sort-meaning"></span></th>
+                            <th class="sort-header" onclick="sortTable('pos')">品詞<br><span class="romaji-text">hinshi</span><span class="sort-arrow" id="sort-pos"></span></th>
+                            <th class="sort-header" onclick="sortTable('level')">級別<br><span class="romaji-text">kyūbetsu</span><span class="sort-arrow" id="sort-level"></span></th>
+                            ${!isCompactView ? '<th class="sort-header" onclick="sortTable(\'example\')">例文<br><span class="romaji-text">reibun</span><span class="sort-arrow" id="sort-example"></span></th>' : ''}
+                            ${!isCompactView ? '<th class="sort-header" onclick="sortTable(\'memory\')">記憶補助<br><span class="romaji-text">kioku hojo</span><span class="sort-arrow" id="sort-memory"></span></th>' : ''}
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            filteredWords.forEach(word => {
+                const posClass = getPOSClass(word.word.part_of_speech);
+                html += `
+                    <tr>
+                        <td>${formatNumberWithRuby(word.number, word.id)}</td>
+                        <td class="japanese-text">${formatWordWithRuby(word.word)}</td>
+                        <td class="meaning-text">${word.word.meaning}</td>
+                        <td><span class="pos-tag pos-${posClass}">${word.word.part_of_speech}</span></td>
+                        <td><span class="level-tag">${word.word.level || 'N5'}</span></td>
+                        ${!isCompactView ? `<td class="japanese-text">${word.example.japanese}<br><span class="romaji-text">${word.example.romaji}</span><br><span class="meaning-text">${word.example.chinese}</span></td>` : ''}
+                        ${!isCompactView ? `<td>${word.memory_aid}</td>` : ''}
+                    </tr>
+                `;
+            });
+
+            html += '</tbody></table>';
+            content.innerHTML = html;
+            
+            // 添加compact view class
+            if (isCompactView) {
+                content.classList.add('compact-view');
+            } else {
+                content.classList.remove('compact-view');
+            }
+        }
+
+        function getPOSClass(pos) {
+            const posMap = {
+                '名詞': 'noun',
+                '動詞': 'verb',
+                '形容詞': 'adjective',
+                '副詞': 'adverb'
+            };
+            return posMap[pos] || 'other';
+        }
+
+        function formatWordWithRuby(word) {
+            if (word.kanji && word.kanji.trim() !== '') {
+                // 如果有漢字，顯示大字體漢字加上平假名讀音，羅馬字在下方
+                return `<ruby class="kanji-text">${word.kanji}<rt class="hiragana-reading">${word.hiragana}</rt></ruby><br><span class="romaji-text">${word.romaji}</span>`;
+            } else {
+                // 如果沒有漢字，顯示平假名，羅馬字在下方
+                return `<span class="kanji-text">${word.hiragana}</span><br><span class="romaji-text">${word.romaji}</span>`;
+            }
+        }
+
+        function formatNumberWithRuby(number, id) {
+            return `#${id}<br>${number.japanese}<br><span class="romaji-text">${number.romaji}</span>`;
+        }
+
+        function updateStats(metadata) {
+            const statsDiv = document.getElementById('stats');
+            const totalCount = document.getElementById('totalCount');
+            const posStats = document.getElementById('posStats');
+            const levelStats = document.getElementById('levelStats');
+
+            totalCount.textContent = filteredWords.length;
+
+            // 統計詞性
+            const posCount = {};
+            filteredWords.forEach(word => {
+                const pos = word.word.part_of_speech;
+                posCount[pos] = (posCount[pos] || 0) + 1;
+            });
+
+            const posStatsText = Object.keys(posCount).map(pos => {
+                const posJapanese = {
+                    '名詞': '名詞 (meishi)',
+                    '動詞': '動詞 (dōshi)', 
+                    '形容詞': '形容詞 (keiyōshi)',
+                    '副詞': '副詞 (fukushi)'
+                };
+                return `${posJapanese[pos] || pos}: ${posCount[pos]}個`;
+            }).join(', ');
+            posStats.textContent = posStatsText;
+
+            // 統計級別
+            const levelCount = {};
+            filteredWords.forEach(word => {
+                const level = word.word.level || 'N5';
+                levelCount[level] = (levelCount[level] || 0) + 1;
+            });
+
+            const levelStatsText = Object.keys(levelCount).map(level => 
+                `${level} (kyūbetsu): ${levelCount[level]}個`
+            ).join(', ');
+            levelStats.textContent = levelStatsText;
+
+            statsDiv.style.display = 'block';
+        }
+
+        function toggleView() {
+            isCompactView = !isCompactView;
+            displayWords();
+        }
+
+        function filterWords(searchTerm) {
+            applyFilters();
+        }
+
+        function showError(message) {
+            document.getElementById('content').innerHTML = 
+                `<div class="error"><strong>錯誤：</strong> ${message}</div>`;
+        }
+
+        function showPOSFilters() {
+            document.getElementById('posFilters').style.display = 'flex';
+        }
+
+        function filterByPOS(pos) {
+            currentPOSFilter = pos;
+            
+            // 更新按鈕狀態
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // 應用篩選
+            applyFilters();
+        }
+
+        function applyFilters() {
+            let words = [...allWords];
+            
+            // 品詞篩選
+            if (currentPOSFilter) {
+                words = words.filter(word => word.word.part_of_speech === currentPOSFilter);
+            }
+            
+            // 搜尋篩選
+            const searchTerm = document.querySelector('.search-box').value.toLowerCase();
+            if (searchTerm.trim()) {
+                words = words.filter(word => 
+                    word.word.hiragana.includes(searchTerm) ||
+                    word.word.romaji.toLowerCase().includes(searchTerm) ||
+                    (word.word.kanji && word.word.kanji.includes(searchTerm)) ||
+                    word.word.meaning.includes(searchTerm) ||
+                    word.word.part_of_speech.includes(searchTerm)
+                );
+            }
+            
+            filteredWords = words;
+            displayWords();
+            updateStats();
+        }
+
+        function sortTable(field) {
+            // 更新排序狀態
+            if (currentSort.field === field && currentSort.direction !== '') {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else if (currentSort.field !== field) {
+                currentSort.field = field;
+                currentSort.direction = 'asc';
+            }
+            // 如果已經設定了排序方向，就保持不變
+            
+            // 清除所有排序箭頭
+            document.querySelectorAll('.sort-arrow').forEach(arrow => {
+                arrow.textContent = '';
+            });
+            
+            // 顯示當前排序箭頭
+            const arrow = document.getElementById(`sort-${field}`);
+            if (arrow) {
+                arrow.textContent = currentSort.direction === 'asc' ? '↑' : '↓';
+            }
+            
+            // 執行排序
+            filteredWords.sort((a, b) => {
+                let valueA, valueB;
+                
+                switch (field) {
+                    case 'id':
+                        valueA = a.id;
+                        valueB = b.id;
+                        break;
+                    case 'word':
+                        valueA = a.word.kanji || a.word.hiragana;
+                        valueB = b.word.kanji || b.word.hiragana;
+                        break;
+                    case 'meaning':
+                        valueA = a.word.meaning;
+                        valueB = b.word.meaning;
+                        break;
+                    case 'pos':
+                        valueA = a.word.part_of_speech;
+                        valueB = b.word.part_of_speech;
+                        break;
+                    case 'level':
+                        valueA = a.word.level || 'N5';
+                        valueB = b.word.level || 'N5';
+                        break;
+                    case 'example':
+                        valueA = a.example.japanese;
+                        valueB = b.example.japanese;
+                        break;
+                    case 'memory':
+                        valueA = a.memory_aid;
+                        valueB = b.memory_aid;
+                        break;
+                    default:
+                        return 0;
+                }
+                
+                if (typeof valueA === 'number' && typeof valueB === 'number') {
+                    return currentSort.direction === 'asc' ? valueA - valueB : valueB - valueA;
+                } else {
+                    const result = valueA.localeCompare(valueB, 'zh-TW');
+                    return currentSort.direction === 'asc' ? result : -result;
+                }
+            });
+            
+            displayWords();
+        }
+
+        // 頁面載入時自動嘗試載入完整JSON
+        document.addEventListener('DOMContentLoaded', function() {
+            loadJSON();
+        });
+    </script>
+</body>
+</html> 

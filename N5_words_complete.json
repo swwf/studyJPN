@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "title": "日語N5單字學習資料",
+    "description": "包含42個N5級別的日語單字，附有平假名、漢字、羅馬字、中文翻譯、例句及記憶輔助",
+    "level": "N5",
+    "total_words": 42,
+    "created_date": "2024"
+  },
+  "words": [
+    {
+      "id": 1,
+      "number": {
+        "japanese": "いち",
+        "romaji": "ichi"
+      },
+      "word": {
+        "hiragana": "くるま",
+        "romaji": "kuruma",
+        "kanji": "車",
+        "meaning": "汽車",
+        "part_of_speech": "名詞"
+      },
+      "example": {
+        "japanese": "車を運転します。",
+        "japanese_ruby": "<ruby>車<rt>くるま</rt></ruby>を<ruby>運転<rt>うんてん</rt></ruby>します。",
+        "romaji": "kuruma o unten shimasu.",
+        "chinese": "駕駛汽車。"
+      },
+      "memory_aid": {
+        "related_words": ["電車 (densha - 火車/電車)", "自転車 (jitensha - 腳踏車)"],
+        "common_usage": ["車に乗る (kuruma ni noru - 搭車)"]
+      },
+      "advanced_phrase": {
+        "japanese": "車が大好きです。",
+        "japanese_ruby": "<ruby>車<rt>くるま</rt></ruby>が<ruby>大好<rt>だいす</rt></ruby>きです。",
+        "romaji": "kuruma ga daisuki desu.",
+        "chinese": "我很喜歡車子。"
+      }
+    },
+    {
+      "id": 2,
+      "number": {
+        "japanese": "に",
+        "romaji": "ni"
+      },
+      "word": {
+        "hiragana": "あたらしい",
+        "romaji": "atarashi",
+        "kanji": "新しい",
+        "meaning": "新的",
+        "part_of_speech": "形容詞"
+      },
+      "example": {
+        "japanese": "新しい本を読みます。",
+        "japanese_ruby": "<ruby>新<rt>あたら</rt></ruby>しい<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。",
+        "romaji": "atarashii hon o yomimasu.",
+        "chinese": "閱讀新書。"
+      },
+      "memory_aid": {
+        "related_words": ["古い (furui - 舊的)"],
+        "common_usage": ["新しい服 (atarashii fuku - 新衣服)", "新しい生活 (atarashii seikatsu - 新生活)"]
+      },
+      "advanced_phrase": {
+        "japanese": "新しいことを始める。",
+        "japanese_ruby": "<ruby>新<rt>あたら</rt></ruby>しいことを<ruby>始<rt>はじ</rt></ruby>める。",
+        "romaji": "atarashii koto o hajimeru.",
+        "chinese": "開始新的事情。"
+      }
+    },
+    {
+      "id": 3,
+      "number": {
+        "japanese": "さん",
+        "romaji": "san"
+      },
+      "word": {
+        "hiragana": "あう",
+        "romaji": "au",
+        "kanji": "会う",
+        "meaning": "見面",
+        "part_of_speech": "動詞"
+      },
+      "example": {
+        "japanese": "友達に会います。",
+        "japanese_ruby": "<ruby>友達<rt>ともだち</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。",
+        "romaji": "tomodachi ni aimasu.",
+        "chinese": "和朋友見面。"
+      },
+      "memory_aid": {
+        "related_words": ["出会う (deau - 相遇)"],
+        "common_usage": ["人に会う (hito ni au - 和人見面)"],
+        "verb_forms": ["あう (辭書形) → 会います (ます形/禮貌形)"]
+      },
+      "advanced_phrase": {
+        "japanese": "先生に会います。",
+        "japanese_ruby": "<ruby>先生<rt>せんせい</rt></ruby>に<ruby>会<rt>あ</rt></ruby>います。",
+        "romaji": "sensei ni aimasu.",
+        "chinese": "和老師見面。"
+      }
+    },
+    {
+      "id": 4,
+      "number": {
+        "japanese": "よん",
+        "romaji": "yon"
+      },
+      "word": {
+        "hiragana": "いう",
+        "romaji": "iu",
+        "kanji": "言う",
+        "meaning": "說",
+        "part_of_speech": "動詞"
+      },
+      "example": {
+        "japanese": "何を言いますか。",
+        "japanese_ruby": "<ruby>何<rt>なに</rt></ruby>を<ruby>言<rt>い</rt></ruby>いますか。",
+        "romaji": "nani o iimasu ka.",
+        "chinese": "說什麼？"
+      },
+      "memory_aid": {
+        "common_usage": ["「はい」と言う (\"hai\" to iu - 說「是」)"],
+        "verb_forms": ["いう (辭書形) → 言います (ます形/禮貌形)"]
+      },
+      "advanced_phrase": {
+        "japanese": "彼は日本語が上手に言えます。",
+        "japanese_ruby": "<ruby>彼<rt>かれ</rt></ruby>は<ruby>日本語<rt>にほんご</rt></ruby>が<ruby>上手<rt>じょうず</rt></ruby>に<ruby>言<rt>い</rt></ruby>えます。",
+        "romaji": "kare wa nihongo ga jouzu ni iemasu.",
+        "chinese": "他日語說得很好。"
+      }
+    },
+    {
+      "id": 5,
+      "number": {
+        "japanese": "ご",
+        "romaji": "go"
+      },
+      "word": {
+        "hiragana": "いえ",
+        "romaji": "ie",
+        "kanji": "家",
+        "meaning": "家",
+        "part_of_speech": "名詞"
+      },
+      "example": {
+        "japanese": "私の家は近いです。",
+        "japanese_ruby": "<ruby>私<rt>わたし</rt></ruby>の<ruby>家<rt>いえ</rt></ruby>は<ruby>近<rt>ちか</rt></ruby>いです。",
+        "romaji": "watashi no ie wa chikai desu.",
+        "chinese": "我家很近。"
+      },
+      "memory_aid": {
+        "related_words": ["家族 (kazoku - 家庭)"],
+        "common_usage": ["家に帰る (ie ni kaeru - 回家)"]
+      },
+      "advanced_phrase": {
+        "japanese": "家に帰ってから宿題をします。",
+        "japanese_ruby": "<ruby>家<rt>いえ</rt></ruby>に<ruby>帰<rt>かえ</rt></ruby>ってから<ruby>宿題<rt>しゅくだい</rt></ruby>をします。",
+        "romaji": "ie ni kaette kara shukudai o shimasu.",
+        "chinese": "回家後寫作業。"
+      }
+    }
+  ]
+} 
