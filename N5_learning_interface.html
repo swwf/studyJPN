@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日語N5單字學習系統</title>
+    <title>日語單字學習系統</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="fixed-header">
-            <div class="header">
-                <h1>🎌 日語N5單字學習系統</h1>
-                <p>互動式學習介面，幫助您掌握日語基礎單字</p>
-                <div class="level-badge">N5 級別</div>
-            </div>
+        <header>
+            <h1>🎌 日語單字學習系統</h1>
+            <p>互動式學習介面，幫助您掌握日語基礎單字</p>
+        </header>
 
+        <div class="fixed-controls">
             <div class="controls">
                 <div class="control-group">
                     <div class="mode-toggle">
@@ -53,33 +52,30 @@
                     </button>
                 </div>
 
-                <!-- 詞性篩選按鈕 -->
-                <div class="pos-filters">
-                    <button class="pos-btn noun" onclick="filterByPOS('名詞', this)">
-                        <span>名詞</span>
-                    </button>
-                    <button class="pos-btn verb" onclick="filterByPOS('動詞', this)">
-                        <span>動詞</span>
-                    </button>
-                    <button class="pos-btn adjective" onclick="filterByPOS('形容詞', this)">
-                        <span>形容詞</span>
-                    </button>
-                    <button class="pos-btn adverb" onclick="filterByPOS('副詞', this)">
-                        <span>副詞</span>
-                    </button>
-                    <button class="pos-btn other" onclick="filterByPOS('', this)">
-                        <span>全部</span>
-                    </button>
-                </div>
-
                 <!-- 級別篩選 -->
                 <div class="level-filters">
-                    <button class="level-btn active" onclick="filterByLevel('N5', this)">N5</button>
-                    <button class="level-btn" onclick="filterByLevel('N4', this)">N4</button>
-                    <button class="level-btn" onclick="filterByLevel('N3', this)">N3</button>
-                    <button class="level-btn" onclick="filterByLevel('N2', this)">N2</button>
-                    <button class="level-btn" onclick="filterByLevel('N1', this)">N1</button>
-                    <button class="level-btn" onclick="filterByLevel('', this)">全部</button>
+                    <label>級別：</label>
+                    <div class="filter-buttons">
+                        <button class="level-btn active" onclick="filterByLevel('N5', this)">N5</button>
+                        <button class="level-btn" onclick="filterByLevel('N4', this)">N4</button>
+                        <button class="level-btn" onclick="filterByLevel('N3', this)">N3</button>
+                        <button class="level-btn" onclick="filterByLevel('N2', this)">N2</button>
+                        <button class="level-btn" onclick="filterByLevel('N1', this)">N1</button>
+                        <button class="level-btn" onclick="filterByLevel('', this)">全部</button>
+                    </div>
+                </div>
+
+                <!-- 詞性篩選按鈕 -->
+                <div class="pos-filters">
+                    <label>詞性：</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn" onclick="filterByPOS('名詞', this)">名詞</button>
+                        <button class="filter-btn" onclick="filterByPOS('動詞', this)">動詞</button>
+                        <button class="filter-btn" onclick="filterByPOS('形容詞', this)">形容詞</button>
+                        <button class="filter-btn" onclick="filterByPOS('副詞', this)">副詞</button>
+                        <button class="filter-btn" onclick="filterByPOS('片語', this)">片語</button>
+                        <button class="filter-btn active" onclick="filterByPOS('', this)">全部</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,6 +114,11 @@
             level: 'N5'
         };
 
+        // 頁面載入時自動載入JSON資料
+        document.addEventListener('DOMContentLoaded', function() {
+            loadFromJSON();
+        });
+
         // 載入JSON資料
         async function loadFromJSON() {
             try {
@@ -129,6 +130,7 @@
                 console.log('成功載入', n5Words.length, '個單字');
             } catch (error) {
                 console.error('載入JSON檔案失敗:', error);
+                alert('載入資料失敗：' + error.message);
                 useBackupData();
             }
         }
@@ -151,6 +153,44 @@
             currentMode = mode;
             document.querySelectorAll('.mode-toggle button').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
+            renderWords();
+        }
+
+        // 詞性篩選
+        function filterByPOS(pos, button) {
+            // 更新按鈕狀態
+            document.querySelectorAll('.pos-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+            
+            // 更新篩選條件
+            currentFilters.pos = pos;
+            renderWords();
+        }
+
+        // 級別篩選
+        function filterByLevel(level, button) {
+            // 更新按鈕狀態
+            document.querySelectorAll('.level-filters .level-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            button.classList.add('active');
+            
+            // 更新篩選條件
+            currentFilters.level = level;
+            renderWords();
+        }
+
+        // 範圍篩選
+        function filterByRange(range) {
+            currentFilters.range = range;
+            renderWords();
+        }
+
+        // 搜尋篩選
+        function searchWords(query) {
+            currentFilters.search = query;
             renderWords();
         }
 
@@ -237,114 +277,117 @@
 
             // 渲染分組
             Object.keys(groupedWords).sort().forEach(pos => {
+                const groupDiv = document.createElement('div');
+                groupDiv.className = 'word-group';
+                
                 // 創建分組標題
-                const groupHeader = document.createElement('div');
-                groupHeader.className = 'group-header';
-                groupHeader.innerHTML = `
-                    <div class="group-title">
-                        <span class="word-type ${getPOSClass(pos)}">${pos}</span>
-                        <span>${pos}</span>
-                    </div>
-                    <div class="group-count">${groupedWords[pos].length} 個單字</div>
-                `;
-                grid.appendChild(groupHeader);
-
-                // 渲染該組的單字
+                const groupTitle = document.createElement('h2');
+                groupTitle.innerHTML = `${pos} <span class="group-count">(${groupedWords[pos].length}個單字)</span>`;
+                groupDiv.appendChild(groupTitle);
+                
+                // 創建單字卡片容器
+                const cardsContainer = document.createElement('div');
+                cardsContainer.className = 'word-grid';
+                
+                // 添加單字卡片
                 groupedWords[pos].forEach(word => {
                     const card = createWordCard(word);
-                    grid.appendChild(card);
+                    cardsContainer.appendChild(card);
                 });
+                
+                groupDiv.appendChild(cardsContainer);
+                grid.appendChild(groupDiv);
             });
-        }
-
-        function getPOSClass(pos) {
-            const posMap = {
-                '名詞': 'noun',
-                '動詞': 'verb',
-                '形容詞': 'adjective',
-                '副詞': 'adverb'
-            };
-            return posMap[pos] || 'other';
         }
 
         function createWordCard(word) {
             const card = document.createElement('div');
             card.className = 'word-card';
+            card.dataset.id = word.id;
             
-            // 處理漢字顯示
-            const displayKanji = word.word.kanji || word.word.hiragana;
-            const posClass = getPOSClass(word.word.part_of_speech);
+            // 檢查是否已學習
+            if (studiedWords.has(word.id)) {
+                card.classList.add('studied');
+            }
             
-            card.innerHTML = `
-                <div class="word-header">
-                    <div class="word-id">#${word.id} (${word.number.japanese})</div>
-                    <div class="word-type ${posClass}">${word.word.part_of_speech}</div>
-                </div>
-                
-                <div class="word-main">
-                    <div class="word-kanji">${displayKanji}</div>
-                    <div class="word-hiragana">${word.word.hiragana}</div>
-                    <div class="word-romaji">${word.word.romaji}</div>
-                    <div class="word-meaning">${word.word.meaning}</div>
-                </div>
-
-                <div class="example-section">
-                    <h4>📝 例句</h4>
-                    <div class="example-text japanese-text">${word.example.japanese}</div>
-                    <div class="example-text romaji-text">${word.example.romaji}</div>
-                    <div class="example-text chinese-text">${word.example.chinese}</div>
-                </div>
-
-                <div class="memory-aid">
-                    <h4>💡 記憶輔助</h4>
-                    <p>${word.memory_aid}</p>
-                </div>
-
-                <div class="advanced-phrase">
-                    <h4>🎯 進階短句</h4>
-                    <div class="example-text japanese-text">${word.advanced_phrase.japanese}</div>
-                    <div class="example-text romaji-text">${word.advanced_phrase.romaji}</div>
-                    <div class="example-text chinese-text">${word.advanced_phrase.chinese}</div>
+            // 顯示級別標籤
+            const levelTag = document.createElement('div');
+            levelTag.className = 'level-tag';
+            levelTag.textContent = word.word.level;
+            card.appendChild(levelTag);
+            
+            // 單字內容
+            let cardContent = `
+                <h3>${word.word.kanji || word.word.hiragana}</h3>
+                <p><span class="part-of-speech pos-${word.word.part_of_speech}">${word.word.part_of_speech}</span></p>
+                <p><strong>平假名：</strong>${word.word.hiragana}</p>
+                <p><strong>羅馬字：</strong>${word.word.romaji}</p>
+                <p><strong>中文：</strong>${word.word.meaning}</p>
+                <div class="example">
+                    <p class="japanese-example">${word.example.japanese}</p>
+                    <p>${word.example.romaji}</p>
+                    <p>${word.example.chinese}</p>
                 </div>
             `;
-
-            card.addEventListener('click', () => {
-                studiedWords.add(word.id);
-                card.style.border = '2px solid #28a745';
-                updateStats();
+            
+            // 學習模式下顯示記憶輔助
+            if (currentMode === 'study') {
+                cardContent += `
+                    <div class="memory-aid">
+                        <h4>記憶輔助</h4>
+                        <p>${word.memory_aid}</p>
+                    </div>
+                    <div class="advanced">
+                        <h4>進階短語</h4>
+                        <p>${word.advanced_phrase.japanese}</p>
+                        <p>${word.advanced_phrase.romaji}</p>
+                        <p>${word.advanced_phrase.chinese}</p>
+                    </div>
+                `;
+            }
+            
+            // 測驗模式下顯示測驗按鈕
+            if (currentMode === 'quiz') {
+                cardContent += `
+                    <div class="quiz-buttons">
+                        <button onclick="markAsCorrect(${word.id})">我會了</button>
+                        <button onclick="markAsIncorrect(${word.id})">再學習</button>
+                    </div>
+                `;
+            }
+            
+            card.innerHTML = cardContent;
+            
+            // 點擊卡片標記為已學習
+            card.addEventListener('click', function() {
+                if (currentMode === 'study') {
+                    toggleStudied(word.id);
+                }
             });
-
+            
             return card;
         }
 
-        function searchWords(query) {
-            currentFilters.search = query;
-            renderWords();
-        }
-
-        function filterByPOS(pos, button) {
-            // 清除其他按鈕的active狀態
-            document.querySelectorAll('.pos-btn').forEach(btn => btn.classList.remove('active'));
-            // 設置當前按鈕為active
-            button.classList.add('active');
+        function toggleStudied(id) {
+            if (studiedWords.has(id)) {
+                studiedWords.delete(id);
+            } else {
+                studiedWords.add(id);
+            }
             
-            currentFilters.pos = pos;
-            renderWords();
-        }
-
-        function filterByLevel(level, button) {
-            // 清除其他按鈕的active狀態
-            document.querySelectorAll('.level-btn').forEach(btn => btn.classList.remove('active'));
-            // 設置當前按鈕為active
-            button.classList.add('active');
+            // 更新卡片外觀
+            const card = document.querySelector(`.word-card[data-id="${id}"]`);
+            if (card) {
+                card.classList.toggle('studied');
+            }
             
-            currentFilters.level = level;
-            renderWords();
-        }
-
-        function filterByRange(range) {
-            currentFilters.range = range;
-            renderWords();
+            // 如果只顯示已學習，且取消了學習狀態，則需要重新渲染
+            if (showStudiedOnly && !studiedWords.has(id)) {
+                renderWords();
+            }
+            
+            updateStats();
+            saveStudiedWords();
         }
 
         function toggleGrouping() {
@@ -360,54 +403,132 @@
         }
 
         function randomWord() {
-            if (n5Words.length === 0) return;
-            const randomIndex = Math.floor(Math.random() * n5Words.length);
-            const randomWord = n5Words[randomIndex];
+            const filteredWords = getFilteredWords();
+            if (filteredWords.length === 0) return;
             
-            // 暫時清除篩選，只顯示隨機單字
-            const tempFilters = {...currentFilters};
-            currentFilters = {search: '', pos: '', range: '', level: ''};
+            const randomIndex = Math.floor(Math.random() * filteredWords.length);
+            const randomWord = filteredWords[randomIndex];
             
+            // 滾動到隨機單字
             const grid = document.getElementById('wordGrid');
             grid.innerHTML = '';
             const card = createWordCard(randomWord);
             grid.appendChild(card);
             
-            // 恢復篩選
-            setTimeout(() => {
-                currentFilters = tempFilters;
-            }, 3000);
+            // 高亮顯示
+            card.classList.add('highlight');
         }
 
         function resetView() {
-            document.querySelector('.search-box').value = '';
-            document.querySelectorAll('.filter-select').forEach(select => select.value = '');
-            document.querySelectorAll('.pos-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelectorAll('.level-btn').forEach(btn => btn.classList.remove('active'));
-            document.querySelector('.level-btn').classList.add('active'); // N5預設選中
+            currentFilters = {
+                search: '',
+                pos: '',
+                range: '',
+                level: 'N5'
+            };
             
-            currentFilters = {search: '', pos: '', range: '', level: 'N5'};
-            studiedWords.clear();
-            isGrouped = false;
-            showStudiedOnly = false;
-            document.getElementById('groupToggleText').textContent = '按詞性分組';
-            document.getElementById('studiedToggleText').textContent = '只顯示已學習';
+            // 重置搜尋欄
+            document.querySelector('.search-box').value = '';
+            
+            // 重置範圍選擇
+            document.querySelector('.filter-select').selectedIndex = 0;
+            
+            // 重置詞性篩選按鈕
+            document.querySelectorAll('.pos-filters .filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector('.pos-filters .filter-btn:last-child').classList.add('active');
+            
+            // 重置級別篩選按鈕
+            document.querySelectorAll('.level-filters .level-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector('.level-filters .level-btn:first-child').classList.add('active');
+            
             renderWords();
         }
 
         function updateStats() {
-            const filteredWords = getFilteredWords();
-            document.getElementById('totalWords').textContent = filteredWords.length;
+            document.getElementById('totalWords').textContent = n5Words.length;
             document.getElementById('studiedWords').textContent = studiedWords.size;
             
             const accuracy = n5Words.length > 0 ? Math.round((studiedWords.size / n5Words.length) * 100) : 0;
-            document.getElementById('accuracy').textContent = accuracy + '%';
+            document.getElementById('accuracy').textContent = `${accuracy}%`;
+        }
+
+        // 保存已學習單字到本地存儲
+        function saveStudiedWords() {
+            localStorage.setItem('studiedWords', JSON.stringify([...studiedWords]));
+        }
+
+        // 從本地存儲載入已學習單字
+        function loadStudiedWords() {
+            const saved = localStorage.getItem('studiedWords');
+            if (saved) {
+                studiedWords = new Set(JSON.parse(saved));
+            }
+        }
+
+        // 測驗模式相關函數
+        function markAsCorrect(id) {
+            quizResults.push({ id, correct: true });
+            toggleStudied(id);
+            
+            // 移除已答題的卡片
+            const card = document.querySelector(`.word-card[data-id="${id}"]`);
+            if (card) {
+                card.classList.add('correct');
+                setTimeout(() => {
+                    card.remove();
+                    checkQuizComplete();
+                }, 500);
+            }
+        }
+
+        function markAsIncorrect(id) {
+            quizResults.push({ id, correct: false });
+            
+            // 移除已答題的卡片
+            const card = document.querySelector(`.word-card[data-id="${id}"]`);
+            if (card) {
+                card.classList.add('incorrect');
+                setTimeout(() => {
+                    card.remove();
+                    checkQuizComplete();
+                }, 500);
+            }
+        }
+
+        function checkQuizComplete() {
+            const remainingCards = document.querySelectorAll('.word-card').length;
+            if (remainingCards === 0) {
+                showQuizResults();
+            }
+        }
+
+        function showQuizResults() {
+            const grid = document.getElementById('wordGrid');
+            const correct = quizResults.filter(r => r.correct).length;
+            const total = quizResults.length;
+            const percentage = Math.round((correct / total) * 100) || 0;
+            
+            grid.innerHTML = `
+                <div class="quiz-results">
+                    <h2>測驗結果</h2>
+                    <div class="result-score">${percentage}%</div>
+                    <p>共 ${total} 題，答對 ${correct} 題</p>
+                    <button onclick="resetQuiz()">重新測驗</button>
+                </div>
+            `;
+        }
+
+        function resetQuiz() {
+            quizResults = [];
+            renderWords();
         }
 
         // 初始化
-        document.addEventListener('DOMContentLoaded', function() {
-            loadFromJSON();
-        });
+        loadStudiedWords();
     </script>
 </body>
 </html> 

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N5 地點單字 - 手機複習版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Microsoft JhengHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 10px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            background: rgba(255, 255, 255, 0.95);
+            color: #4a5568;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        @media (min-width: 480px) {
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .word-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .word-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .word-card.flipped {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+        }
+
+        .word-number {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            background: #667eea;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .word-chinese {
+            font-size: 16px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .word-japanese {
+            font-size: 20px;
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        .word-hiragana {
+            font-size: 16px;
+            color: #4a5568;
+            margin-bottom: 12px;
+        }
+
+        .word-details {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .word-details.show {
+            display: block;
+        }
+
+        .word-romaji {
+            font-size: 14px;
+            color: #2d3748;
+            margin-bottom: 8px;
+            font-style: italic;
+        }
+
+        .word-hint {
+            font-size: 13px;
+            color: #2d3748;
+            line-height: 1.4;
+            background: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .flip-instruction {
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏠 N5 地點單字</h1>
+            <p>圖像記憶之旅 - 手機複習版</p>
+        </div>
+
+        <div class="flip-instruction">
+            💡 點擊卡片可以顯示羅馬拼音和記憶提示
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <div class="stats">
+            <span>已複習: <span id="reviewedCount">0</span> / 29</span>
+            <span>完成度: <span id="progressPercent">0</span>%</span>
+        </div>
+
+        <!-- 故事起點：從家裡出發 -->
+        <div class="section">
+            <div class="section-title">🏠 故事起點：從家裡出發</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">1</div>
+                    <div class="word-chinese">家</div>
+                    <div class="word-japanese">家</div>
+                    <div class="word-hiragana">いえ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：ie</div>
+                        <div class="word-hint">「噫～」一聲才能進的家</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">2</div>
+                    <div class="word-chinese">房間</div>
+                    <div class="word-japanese">部屋</div>
+                    <div class="word-hiragana">へや</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：heya</div>
+                        <div class="word-hint">房間裡怎麼「黑呀！」一片</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">3</div>
+                    <div class="word-chinese">建築物</div>
+                    <div class="word-japanese">建物</div>
+                    <div class="word-hiragana">たてもの</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：tatemono</div>
+                        <div class="word-hint">榻榻米和糯米蓋的建築物</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">4</div>
+                    <div class="word-chinese">公寓</div>
+                    <div class="word-japanese">アパート</div>
+                    <div class="word-hiragana">あぱーと</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：apa-to</div>
+                        <div class="word-hint">管理員「啊！扒！倒！」進了公寓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事第二站：出門上街 -->
+        <div class="section">
+            <div class="section-title">🚶 故事第二站：出門上街</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">5</div>
+                    <div class="word-chinese">道路</div>
+                    <div class="word-japanese">道</div>
+                    <div class="word-hiragana">みち</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：michi</div>
+                        <div class="word-hint">灑滿米和起司的道路</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">6</div>
+                    <div class="word-chinese">十字路口</div>
+                    <div class="word-japanese">交差點</div>
+                    <div class="word-hiragana">こうさてん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：kousatenn</div>
+                        <div class="word-hint">賣「烤肉串殺了我吧」的十字路口</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">7</div>
+                    <div class="word-chinese">公車站</div>
+                    <div class="word-japanese">バス停</div>
+                    <div class="word-hiragana">ばすてい</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：basutei</div>
+                        <div class="word-hint">拿芭樂打不停的公車站</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事第三站：搭車與車站 -->
+        <div class="section">
+            <div class="section-title">🚂 故事第三站：搭車與車站</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">8</div>
+                    <div class="word-chinese">車站</div>
+                    <div class="word-japanese">駅</div>
+                    <div class="word-hiragana">えき</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：eki</div>
+                        <div class="word-hint">像蝦一樣「擠」進車站</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">9</div>
+                    <div class="word-chinese">地鐵</div>
+                    <div class="word-japanese">地下鉄</div>
+                    <div class="word-hiragana">ちかてつ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：chikatetsu</div>
+                        <div class="word-hint">「起司發熱」的地鐵</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事第四站：城市工作與購物 -->
+        <div class="section">
+            <div class="section-title">🏢 故事第四站：城市工作與購物</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">10</div>
+                    <div class="word-chinese">公司</div>
+                    <div class="word-japanese">會社</div>
+                    <div class="word-hiragana">かいしゃ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：kaisya</div>
+                        <div class="word-hint">玩「鎧甲摔角」的公司</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">11</div>
+                    <div class="word-chinese">百貨公司</div>
+                    <div class="word-japanese">デパート</div>
+                    <div class="word-hiragana">でぱーと</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：depa-to</div>
+                        <div class="word-hint">「跌！爸！偷！」你爸在百貨公司！</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">12</div>
+                    <div class="word-chinese">電梯</div>
+                    <div class="word-japanese">エレベーター</div>
+                    <div class="word-hiragana">えれべーたー</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：erebe-ta-</div>
+                        <div class="word-hint">鵝玩樂高，揹起來打人</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">13</div>
+                    <div class="word-chinese">餐廳</div>
+                    <div class="word-japanese">レストラン</div>
+                    <div class="word-hiragana">れすとらん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：resutorann</div>
+                        <div class="word-hint">蕾絲邊的哆啦A夢</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">14</div>
+                    <div class="word-chinese">廁所</div>
+                    <div class="word-japanese">トイレ</div>
+                    <div class="word-hiragana">といれ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：toire</div>
+                        <div class="word-hint">偷看鵝</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">15</div>
+                    <div class="word-chinese">旅館、飯店</div>
+                    <div class="word-japanese">ホテル</div>
+                    <div class="word-hiragana">ほてる</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：hoteru</div>
+                        <div class="word-hint">（想像逛累了去飯店，服務生呵著氣幫你提行李）</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事第五站：文教與公共設施巡禮 -->
+        <div class="section">
+            <div class="section-title">🏫 故事第五站：文教與公共設施巡禮</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">16</div>
+                    <div class="word-chinese">學校</div>
+                    <div class="word-japanese">學校</div>
+                    <div class="word-hiragana">がっこう</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：gakkou</div>
+                        <div class="word-hint">「嘎」一聲笑牆上的狗</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">17</div>
+                    <div class="word-chinese">教室</div>
+                    <div class="word-japanese">教室</div>
+                    <div class="word-hiragana">きょうしつ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：kyousitsu</div>
+                        <div class="word-hint">老師在教室「叫」賣「西施」</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">18</div>
+                    <div class="word-chinese">圖書館</div>
+                    <div class="word-japanese">図書館</div>
+                    <div class="word-hiragana">としょかん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：tosyokann</div>
+                        <div class="word-hint">脫光光的小朋友給大家看</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">19</div>
+                    <div class="word-chinese">郵局</div>
+                    <div class="word-japanese">郵便局</div>
+                    <div class="word-hiragana">ゆうびんきょく</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：yuubinnkyoku</div>
+                        <div class="word-hint">魷魚吃便當還翹腳</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">20</div>
+                    <div class="word-chinese">醫院</div>
+                    <div class="word-japanese">病院</div>
+                    <div class="word-hiragana">びょういん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：byouinn</div>
+                        <div class="word-hint">貓醫生給你印有貓掌的藥水</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事第六站：各式店家 -->
+        <div class="section">
+            <div class="section-title">🏪 故事第六站：各式店家</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">21</div>
+                    <div class="word-chinese">店</div>
+                    <div class="word-japanese">店</div>
+                    <div class="word-hiragana">みせ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：mise</div>
+                        <div class="word-hint">每家店門口都放著味增湯</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">22</div>
+                    <div class="word-chinese">咖啡廳、茶館</div>
+                    <div class="word-japanese">喫茶店</div>
+                    <div class="word-hiragana">きっさてん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：kissatenn</div>
+                        <div class="word-hint">親吻你的天使情人</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">23</div>
+                    <div class="word-chinese">電影院</div>
+                    <div class="word-japanese">映畫館</div>
+                    <div class="word-hiragana">えいがかん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：eigakann</div>
+                        <div class="word-hint">吃A級的豬肝</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">24</div>
+                    <div class="word-chinese">銀行</div>
+                    <div class="word-japanese">銀行</div>
+                    <div class="word-hiragana">ぎんこう</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：ginnkou</div>
+                        <div class="word-hint">金色的猴子行員</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">25</div>
+                    <div class="word-chinese">公園</div>
+                    <div class="word-japanese">公園</div>
+                    <div class="word-hiragana">こうえん</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：kouenn</div>
+                        <div class="word-hint">口香糖和鹽做的公園</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 故事終點：出入與通用概念 -->
+        <div class="section">
+            <div class="section-title">🚪 故事終點：出入與通用概念</div>
+            <div class="cards-grid">
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">26</div>
+                    <div class="word-chinese">入口</div>
+                    <div class="word-japanese">入り口</div>
+                    <div class="word-hiragana">いりぐち</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：iriguchi</div>
+                        <div class="word-hint">一隻蛾在入口等你</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">27</div>
+                    <div class="word-chinese">出口</div>
+                    <div class="word-japanese">出口</div>
+                    <div class="word-hiragana">でぐち</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：deguchi</div>
+                        <div class="word-hint">一隻鵝在出口等你</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">28</div>
+                    <div class="word-chinese">場所</div>
+                    <div class="word-japanese">場所</div>
+                    <div class="word-hiragana">ばしょ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：basyo</div>
+                        <div class="word-hint">任何場所都停著一輛巴士</div>
+                    </div>
+                </div>
+
+                <div class="word-card" onclick="flipCard(this)">
+                    <div class="word-number">29</div>
+                    <div class="word-chinese">地點、地方</div>
+                    <div class="word-japanese">所</div>
+                    <div class="word-hiragana">ところ</div>
+                    <div class="word-details">
+                        <div class="word-romaji">羅馬拼音：tokoro</div>
+                        <div class="word-hint">用手指到處「戳」，找地方</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let reviewedCards = new Set();
+        const totalCards = 29;
+
+        function flipCard(card) {
+            const details = card.querySelector('.word-details');
+            const isFlipped = card.classList.contains('flipped');
+            
+            if (isFlipped) {
+                // 收起卡片
+                card.classList.remove('flipped');
+                details.classList.remove('show');
+            } else {
+                // 翻開卡片
+                card.classList.add('flipped');
+                details.classList.add('show');
+                
+                // 標記為已複習
+                const cardNumber = card.querySelector('.word-number').textContent;
+                reviewedCards.add(cardNumber);
+                updateProgress();
+            }
+        }
+
+        function updateProgress() {
+            const reviewedCount = reviewedCards.size;
+            const percentage = Math.round((reviewedCount / totalCards) * 100);
+            
+            document.getElementById('reviewedCount').textContent = reviewedCount;
+            document.getElementById('progressPercent').textContent = percentage;
+            document.getElementById('progressFill').style.width = percentage + '%';
+        }
+
+        // 初始化進度
+        updateProgress();
+    </script>
+</body>
+</html> 
