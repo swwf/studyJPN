@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日文動詞與五十音記憶法</title>
+    <style>
+        :root {
+            --primary-color: #4a4a4a;
+            --secondary-color: #007bff;
+            --background-color: #f4f4f9;
+            --card-background: #ffffff;
+            --border-color: #e0e0e0;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            background-color: var(--background-color);
+            color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        header {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background-color: var(--card-background);
+            border-bottom: 1px solid var(--border-color);
+        }
+        header h1 {
+            margin: 0;
+            color: #333;
+            font-size: 1.8rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            color: #666;
+            font-size: 1rem;
+        }
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 0.75rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        nav a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 0.8rem;
+            border-radius: 20px;
+            background-color: #e7f3ff;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #d0e7ff;
+        }
+        section {
+            padding-top: 4rem; /* Offset for sticky nav */
+            margin-top: -3rem;
+        }
+        section h2 {
+            font-size: 1.5rem;
+            color: #333;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        .mnemonic-card {
+            background-color: var(--card-background);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px var(--shadow-color);
+        }
+        .hiragana-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #d9534f;
+            margin-top: 0;
+        }
+        .mnemonic-card p {
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .word-entry {
+            margin-bottom: 1.2rem;
+            padding-left: 1rem;
+            border-left: 3px solid #f0ad4e;
+        }
+        .word-entry strong {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        ruby {
+            font-size: 1.2rem;
+        }
+        rt {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .mnemonic-text {
+            color: #555;
+            font-style: italic;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>日文動詞與五十音記憶法</h1>
+        <p>用圖像聯想法一次學會！</p>
+    </header>
+
+    <nav>
+        <a href="#a-gyo">あ行</a>
+        <a href="#ka-gyo">か行</a>
+        <a href="#sa-gyo">さ行</a>
+        <a href="#ta-gyo">た行</a>
+        <a href="#na-gyo">な行</a>
+        <a href="#ha-gyo">は行</a>
+        <a href="#ma-gyo">ま行</a>
+        <a href="#ya-gyo">や行</a>
+    </nav>
+
+    <div class="container">
+        <main>
+            <section id="a-gyo">
+                <h2>あ行 (a, i, u, o)</h2>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">あ (a)</h3>
+                    <p><strong>字源聯想：</strong>`あ` 源自「安」，形狀像大寫 "A" 上面打了個結。</p>
+                    <div class="word-entry"><strong><ruby>會<rt>あ</rt></ruby>う (au) - 見面</strong><p class="mnemonic-text">你看，`あ` 就像兩個人彎腰，終於**見面**了，高興地發出「啊！(あ)」的聲音。</p></div>
+                    <div class="word-entry"><strong><ruby>遊<rt>あそ</rt></ruby>ぶ (asobu) - 玩耍</strong><p class="mnemonic-text">一個小朋友 (`あ`) 在「啊！(`あ`)」地大叫，因為他「搜 (`そ`)」集到很多「步 (`ぶ`)」驟，終於可以**玩耍**了！</p></div>
+                    <div class="word-entry"><strong><ruby>歩<rt>ある</rt></ruby>く (aruku) - 走路</strong><p class="mnemonic-text">一個人 (`あ`) 在「啊 (`あ`)」地感嘆，因為他**走路**走了好「遠 (`る`)」，覺得好「苦 (`く`)」。</p></div>
+                </div>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">い (i)</h3>
+                    <p><strong>字源聯想：</strong>`い` 源自「以」，形狀就像兩個人(ii)站在一起。</p>
+                    <div class="word-entry"><strong><ruby>言<rt>い</rt></ruby>う (iu) - 說</strong><p class="mnemonic-text">有兩個 `い` 站在一起，左邊對右邊**說**：「I (`い`) tell you (`う`) 一件事...」</p></div>
+                    <div class="word-entry"><strong><ruby>行<rt>い</rt></ruby>く (iku) - 去</strong><p class="mnemonic-text">`い` 像兩個腳印，代表你決定要**去**了。朋友問你要去哪，你說：「I (`い`) ku (`く`)-now! 我現在就要**去**！」</p></div>
+                    <div class="word-entry"><strong><ruby>要<rt>い</rt></ruby>る (iru) - 需要</strong><p class="mnemonic-text">`い` 像一個人伸出手，他說：「I (`い`) really (`る`) **需要**這個東西！」</p></div>
+                </div>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">う (u)</h3>
+                    <p><strong>字源聯想：</strong>`う` 源自「宇」，像一個人被打了一拳彎下腰。</p>
+                    <div class="word-entry"><strong><ruby>歌<rt>うた</rt></ruby>う (utau) - 唱</strong><p class="mnemonic-text">你彎著腰 (`う`)，很投入地在**唱**歌，嘴裡唱著：「嗚~ (`う`) 嗒 (`た`) 嗚 (`う`)~」</p></div>
+                </div>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">お (o)</h3>
+                    <p><strong>字源聯想：</strong>`お` 源自「於」，形狀像一個人在練瑜珈。</p>
+                    <div class="word-entry"><strong><ruby>泳<rt>およ</rt></ruby>ぐ (oyogu) - 游泳</strong><p class="mnemonic-text">一個人 (`お`) 跳進水裡，朋友驚訝地「喔！(`お`)」了一聲，稱讚他：「你 (`よ`) good (`ぐ`)！真會**游泳**！」</p></div>
+                    <div class="word-entry"><strong><ruby>終<rt>お</rt></ruby>わる (owaru) - 結束</strong><p class="mnemonic-text">看到表演**結束**了，你很驚訝地「喔！(`お`)」了一聲，「哇 (`わ`)！真的 (`る`) 結束了？」</p></div>
+                    <div class="word-entry"><strong><ruby>教<rt>おし</rt></ruby>える (osieru) - 告訴、教導</strong><p class="mnemonic-text">一個老師 (`お`)「喔！(`お`)」地清了清喉嚨，對著「蟋蟀 (`し`)」說：「欸 (`え`)！我來**教**你 (`る`) 數學。」</p></div>
+                </div>
+            </section>
+
+            <section id="ka-gyo">
+                <h2>か行 (ka, ki, ku, ko)</h2>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">か (ka)</h3>
+                    <p><strong>字源聯想：</strong>`か` 源自「加」，形狀像一個人用力地 `(ka)` 一聲，把東西劈開。</p>
+                    <div class="word-entry"><strong><ruby>買<rt>か</rt></ruby>う (kau) - 買</strong><p class="mnemonic-text">你用力 (`か`) 地把錢包打開，對老闆說：「我要**買**這個，你看 (`う`)！」</p></div>
+                    <div class="word-entry"><strong><ruby>書<rt>か</rt></ruby>く (kaku) - 寫</strong><p class="mnemonic-text">`か` 這個字就像一個人拿著筆，正在用力地**寫**字，寫得 `(ka)` `(ka)` 作響。</p></div>
+                    <div class="word-entry"><strong><ruby>掛<rt>か</rt></ruby>かる (kakaru) - 花費</strong><p class="mnemonic-text">你看到帳單，嚇到「卡 (`か`)」住，心想：「怎麼會**花費**這麼多錢，我卡 (`か`) 在這裡 (`る`)！」</p></div>
+                    <div class="word-entry"><strong><ruby>帰<rt>かえ</rt></ruby>る (kaeru) - 回家</strong><p class="mnemonic-text">一隻青蛙 (`かえる`) 說：「天黑了，該**回家**了。」</p></div>
+                </div>
+                 <div class="mnemonic-card">
+                    <h3 class="hiragana-title">き (ki)</h3>
+                    <p><strong>字源聯想：</strong>`き` 源自「幾」，它的形狀就像一把鑰匙 (key)。</p>
+                    <div class="word-entry"><strong><ruby>聞<rt>き</rt></ruby>く (kiku) - 請教、聽到</strong><p class="mnemonic-text">你拿著一把鑰匙 (`き`)，去敲門 (`kiku kiku`)，想要**請教**裡面的大師。</p></div>
+                </div>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">く (ku)</h3>
+                    <p><strong>字源聯想：</strong>`く` 源自「久」，形狀像一個張開的嘴巴或 Pac-Man。</p>
+                    <div class="word-entry"><strong><ruby>來<rt>く</rt></ruby>る (kuru) - 來</strong><p class="mnemonic-text">小精靈 (`く`) 轉過頭 (`る`)，正朝著你的方向**來**了！</p></div>
+                </div>
+                <div class="mnemonic-card">
+                    <h3 class="hiragana-title">こ (ko)</h3>
+                    <p><strong>字源聯想：</strong>`こ` 源自「己」，像兩條平行線，上下不得。</p>
+                    <div class="word-entry"><strong><ruby>答<rt>こた</rt></ruby>える (kotaeru) - 回答</strong><p class="mnemonic-text">你被卡 (`こ`) 住了，正在思考怎麼**回答**這個「他 (`た`) 欸 (`え`)」的問題 (`る`)。</p></div>
+                    <div class="word-entry"><strong><ruby>困<rt>こま</rt></ruby>る (komaru) - 困擾</strong><p class="mnemonic-text">你上下 (`こ`) 都被困住了，覺得很**困擾**，心想：「這下完蛋 (`まる`) 了！」</p></div>
+                </div>
+            </section>
+
+            </main>
+        
+        <footer>
+            <p>Happy Learning! &copy; 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
